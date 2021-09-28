@@ -58,7 +58,7 @@ body {
 }
 
 #highlight {
-    color: rgb(255, 60, 60);
+    color: rgb(255, 102, 102);
 }
 
 .nav-btn {
@@ -118,11 +118,11 @@ body {
 }
 
 .advert-btn:hover {
-    box-shadow: 0px 0px 6px 0.1px rgba(0, 0, 0, 0.74);
+    box-shadow: 0px 0px 6px 0.1px rgba(255, 0, 0, 0.85);
 }
 
 .advert-btn:after {
-    background: rgb(29, 1, 1);
+    background: rgba(0, 0, 0, 0.75);
     opacity: 99%;
     width: 35px;
 }
@@ -204,7 +204,7 @@ body {
     overflow: hidden;
 }
 
-#st-louis {
+#chicago {
     background-image: url(assets/stl.jpg);
     overflow: hidden;
 }
@@ -244,7 +244,7 @@ body {
 }
 
 .callnow-btn:after {
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.75);
     opacity: 85%;
     width: 40px;
 }
