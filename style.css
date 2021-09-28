@@ -4,10 +4,6 @@
     text-decoration: none;
 }
 
-/* :root {
-
-} */
-
 body {
     background: url(assets/whitebg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -21,31 +17,6 @@ body {
     background-size: 100%;
     height: 100vh;
     color: #fff;
-}
-
-#advert {
-    font-size: 20px;
-    position: relative;
-    top: 350px;
-    left: 75px;
-    width: 325px;
-}
-
-.advert-btn {
-    margin-top: 10px;
-    background-color: #fff;
-    color: black;
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.advert-btn:hover {
-    box-shadow: 0px 0px 6px 0.1px rgba(0, 0, 0, 0.74);
-}
-
-.advert-btn:after {
-    background: rgb(29, 1, 1);
-    opacity: 99%;
-    width: 35px;
 }
 
 #main-nav {
@@ -65,20 +36,23 @@ body {
     font-family: 'Italiana', serif;
 }
 
-#nav-right {
+.nav-right {
     float: right;
     color: white;
     margin-right: 60px;
     font-size: 20px;
+}
+
+.top-nav {
     line-height: 115px;
 }
 
-#nav-right a {
+.nav-right a {
     margin-right: 60px;
     color: rgb(168, 168, 168);
 }
 
-#nav-right a:hover {
+.nav-right a:hover {
     color: #fff;
     transition: 0.25s;
 }
@@ -122,6 +96,31 @@ body {
     left: 120%;
     transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
     -webkit-transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+#advert {
+    font-size: 20px;
+    position: relative;
+    top: 350px;
+    left: 75px;
+    width: 325px;
+}
+
+.advert-btn {
+    margin-top: 10px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.advert-btn:hover {
+    box-shadow: 0px 0px 6px 0.1px rgba(0, 0, 0, 0.74);
+}
+
+.advert-btn:after {
+    background: rgb(29, 1, 1);
+    opacity: 99%;
+    width: 35px;
 }
 
 #about {
@@ -206,20 +205,10 @@ body {
     overflow: hidden;
 }
 
-#bottom-footer {
-    height: 75px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    line-height: 75px;
-    font-size: 28px;
-    font-family: 'Italiana', serif;
-}
-
 #callnow {
     background: url(assets/corv.jpg) no-repeat;
     background-size: 100%;
-    height: 100vh;
+    height: 75vh;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -258,6 +247,27 @@ body {
 
 .callnow-btn:hover {
     box-shadow: 0px 0px 6px 0.1px rgba(255, 0, 0, 0.85);
+}
+
+#bottom-footer {
+    height: 75px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#bottom-footer h6 {
+    line-height: 75px;
+    font-size: 28px;
+    font-family: 'Italiana', serif;
+    position: relative;
+    left: 50px;
+}
+
+.bootom-nav {
+    line-height: 75px;
 }
 
 /* @media screen and (max-width ) */
