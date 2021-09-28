@@ -13,17 +13,27 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#container {
+    background: url(../assets/call.jpg) no-repeat;
+    background-size: 100%;
+    color: black;
+    height: 50vh;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #main-nav {
     height: 115px;
     background-color: black;
     color: #fff;
-    position: fixed;
     width: 100%;
     z-index: 100;
 }
 
 #highlight {
-    color: rgb(255, 60, 60);
+    color: rgb(255, 102, 102);
 }
 
 #lux-txt {
@@ -94,6 +104,63 @@ body {
     left: 120%;
     transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
     -webkit-transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+article {
+    
+}
+
+#location-cut {
+    font-size: 28px;
+    text-align: center;
+}
+
+#locations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px 50px 0px 50px;
+}
+
+#locations footer {
+    font-size: 42px;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.location-box {
+    width: 300px;
+    height: 350px;
+    background-color: black;
+    margin: 25px 0px 50px 0px;
+    border-radius: 15px;
+    align-content: flex-end;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
+}
+
+#charlotte {
+    background-image: url(../assets/charlotte.jpg);
+    overflow: hidden;
+}
+
+#nyc {
+    background-image: url(../assets/nyc.jpg);
+    overflow: hidden;
+}
+
+#san-fransisco {
+    background-image: url(../assets/san-francisco.jpg);
+    overflow: hidden;
+}
+
+#chicago {
+    background-image: url(../assets/stl.jpg);
+    overflow: hidden;
 }
 
 #bottom-footer {
