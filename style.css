@@ -183,6 +183,7 @@ body {
     margin: 25px 0px 50px 0px;
     border-radius: 15px;
     align-content: flex-end;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
 }
 
 #charlotte {
