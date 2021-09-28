@@ -57,6 +57,10 @@ body {
     transition: 0.25s;
 }
 
+#highlight {
+    color: rgb(255, 60, 60);
+}
+
 .nav-btn {
     border: 1px solid rgb(110, 110, 110);
     background: transparent;
