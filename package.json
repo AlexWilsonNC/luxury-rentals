@@ -1,0 +1,33 @@
+{
+  "name": "luxury-rentals",
+  "version": "1.0.0",
+  "description": "Luxury Rentals is a car rental site built collectively as a group project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seed/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexWilsonNC/luxury-rentals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexWilsonNC/luxury-rentals/issues"
+  },
+  "homepage": "https://github.com/AlexWilsonNC/luxury-rentals#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.1.5",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
