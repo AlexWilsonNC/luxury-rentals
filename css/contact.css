@@ -22,6 +22,10 @@ body {
     z-index: 100;
 }
 
+#highlight {
+    color: rgb(255, 60, 60);
+}
+
 #lux-txt {
     color: #fff;
     font-size: 58px;
