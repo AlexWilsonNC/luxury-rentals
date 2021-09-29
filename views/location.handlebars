@@ -1,15 +1,11 @@
-<div>
+<div id="container">
+    <h2>
+        {{location.name}}
+    </h2>
+    <iframe src="{{location.embed}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <ol id="all-cars">
-        {{#each cars as |car|}}
-            <li class="card">
-                <img src={{car.image}}>
-                <h1>{{car.make}} {{car.model}}</h1>
-                <div class="name-year">
-                    <p>{{car.year}}</p>
-                    <p>${{car.price}}/day</p>
-                    <button>Rent</button>
-                </div>
-            </li>
+        {{#each location.cars as |car|}}
+           {{> car-details}}
         {{/each}}
     </ol>       
 </div>
