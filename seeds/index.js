@@ -5,12 +5,16 @@ const seedCarLocations = require('./car-location-seeds');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
+  console.log('\n----- DATABASE SYNCED -----\n');
 
   await seedCars();
+  console.log('\n----- CARS SEEDED -----\n');
 
   await seedLocations();
+  console.log('\n----- LOCATIONS SEEDED -----\n');
 
   await seedCarLocations();
+  console.log('\n----- CAR LOCATIONS SEEDED -----\n');
 
   process.exit(0);
 };

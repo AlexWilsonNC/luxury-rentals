@@ -33,11 +33,11 @@ Car.init(
                 isNumeric: true,
             }
         },
-        image: {
+        color: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        color: {
+        image: {
             type: DataTypes.STRING,
             allowNull: false
         },

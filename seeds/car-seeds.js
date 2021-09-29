@@ -29,7 +29,7 @@ const carData = [
         "year": "2018",
         "make": "Bugatti",
         "model": "Veyron",
-        "price": "22,000",
+        "price": "22000",
         "color": "Black",
         "image": "/assets/inventory/bugatti-veyron-2018.jpg"
     },
@@ -117,10 +117,9 @@ const carData = [
         "year": "2019",
         "make": "Pagani",
         "model": "Huayra",
-        "price": "25,000",
+        "price": "25000",
         "color": "Blue",
-        "image": "/assets/inventory/pagani-huayra-2019.jpg",
-        "locationIds": ["3"]
+        "image": "/assets/inventory/pagani-huayra-2019.jpg"
     },
     {
         "year": "2018",
