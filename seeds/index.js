@@ -1,21 +1,20 @@
 const sequelize = require('../config/connection');
-const Car = require('../models/Car');
-const carData = require('./car-seeds.json');
-const Location = require('../models/Location');
-const locationData = require('./location-seeds.json');
+const seedCars = require('./car-seeds');
+const seedLocations = require('./location-seeds');
+const seedCarLocations = require('./car-location-seeds');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
+  console.log('\n----- DATABASE SYNCED -----\n');
 
-  await Car.bulkCreate(carData, {
-    individualHooks: true,
-    returning: true,
-  });
+  await seedCars();
+  console.log('\n----- CARS SEEDED -----\n');
 
-  await Location.bulkCreate(locationData, {
-    individualHooks: true,
-    returning: true,
-  });
+  await seedLocations();
+  console.log('\n----- LOCATIONS SEEDED -----\n');
+
+  await seedCarLocations();
+  console.log('\n----- CAR LOCATIONS SEEDED -----\n');
 
   process.exit(0);
 };
