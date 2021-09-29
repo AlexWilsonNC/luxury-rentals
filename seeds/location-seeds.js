@@ -1,4 +1,6 @@
-[
+const Location = require('../models/Location');
+
+const locationData = [
     {
         "city": "Charlotte",
         "airport": "CLT",
@@ -23,4 +25,8 @@
         "latitude": "41.9803",
         "longitude": "-87.9090"
     }
-]
+];
+
+const seedLocations = () => Location.bulkCreate(locationData);
+
+module.exports = seedLocations;

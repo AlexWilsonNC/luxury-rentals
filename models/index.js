@@ -1,6 +1,5 @@
 const Car = require('./Car');
 const Location = require('./Location');
-const Category = require('./Category');
 const User = require('./User');
 const Reservation = require('./Reservation');
 const CarLocation = require('./CarLocation');
@@ -27,7 +26,6 @@ module.exports = {
     Car,
     Location,
     CarLocation,
-    Category,
     User,
     Reservation
 };
