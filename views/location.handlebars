@@ -1,0 +1,15 @@
+<div>
+    <ol id="all-cars">
+        {{#each cars as |car|}}
+            <li class="card">
+                <img src={{car.image}}>
+                <h1>{{car.make}} {{car.model}}</h1>
+                <div class="name-year">
+                    <p>{{car.year}}</p>
+                    <p>${{car.price}}/day</p>
+                    <button>Rent</button>
+                </div>
+            </li>
+        {{/each}}
+    </ol>       
+</div>
