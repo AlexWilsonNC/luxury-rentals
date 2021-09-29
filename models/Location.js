@@ -19,8 +19,8 @@ Location.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    map: {
-      type: DataTypes.STRING,
+    embed: {
+      type: DataTypes.TEXT,
       allowNull: false
     }
   },
