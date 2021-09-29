@@ -17,7 +17,7 @@ body {
     background: url(../assets/call.jpg) no-repeat;
     background-size: 100%;
     color: black;
-    height: 50vh;
+    height: 38vh;
     font-size: 48px;
     display: flex;
     align-items: center;
@@ -107,7 +107,48 @@ body {
 }
 
 article {
-    
+    display: flex;
+    justify-content: center;
+}
+
+#main-box {
+    margin: 25px 0px 25px 0px;
+    width: 60%;
+    height: 275px;
+    background-color: rgba(131, 131, 131, 0.75);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
+    padding: 25px;
+}
+
+#main-box * {
+    margin-bottom: 25px;
+}
+
+#main-box h1 {
+    font-size: 36px;
+    color: black;
+}
+
+#main-box h1:hover {
+    color: blue;
+}
+
+#main-box h2 {
+    font-size: 26px;
+}
+
+#main-box a {
+    font-size: 36px;
+}
+
+#email a:hover {
+    text-decoration: underline;
+}
+
+#main-box h3 {
+    font-size: 36px;
 }
 
 #location-cut {
@@ -159,7 +200,7 @@ article {
 }
 
 #chicago {
-    background-image: url(../assets/stl.jpg);
+    background-image: url(../assets/chicago.jpg);
     overflow: hidden;
 }
 
