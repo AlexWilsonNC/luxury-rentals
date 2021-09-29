@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -92,6 +93,174 @@ body {
     -webkit-transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
 }
 
+/* Main Content on Page */
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-box {
+    width: 70%;
+    height: 450px;
+    background-color: rgba(131, 131, 131, 0.75);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin: 35px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#left {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 0px 0px 25px;
+}
+
+.dropdown,
+#numder-days {
+    width: 250px;
+    font-size: 20px;
+    margin: 0px 0px 20px 20px;
+}
+
+#right {
+    width: 50%; 
+    text-align: center;
+}
+
+#img-generator {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 0px 0px;
+}
+
+#img-right {
+    width: 450px;
+    max-width: 100%;
+    border: 7.5px solid black;
+}
+
+#price-generator {
+    font-size: 38px;
+    margin: 10px 0px 0px 0px;
+}
+
+#bottom-right {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+#total-purchase {
+    font-size: 22px;
+    padding: 10px 0px 0px 0px;
+}
+
+.confirm-btn {
+    border: 1px solid rgb(61, 61, 61);
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 12px 30px 12px 30px;
+    font-size: 22px;
+}
+
+.confirm-btn:hover {
+    cursor: pointer;
+    background-color: grey;
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* Calendar */
+/**************************************************************************/
+
+  body {
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  .calendar-container {
+      max-width: 300px;
+      width: 100%;
+      margin-bottom: 25px;
+  }
+  
+  .calendar {
+      background: #222222;
+      border-radius: 7px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      height: 275px;
+      transform-style: preserve-3d;
+      width: 100%;
+  }
+  
+  .current-date {
+      border-bottom: 1px solid rgb(255, 255, 255);
+      padding: 10px 0px 10px 0px;
+  }
+  
+  .current-date h1 {
+      color: #fff;
+      font-size: 1.4em;
+      font-weight: 300;
+      margin-left: 25px;
+  }
+  
+  .week-days {
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      padding: 10px 20px 0px 20px;
+  }
+  
+  /* .days {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  } */
+  
+  .weeks {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 5px 20px 0px 6px;
+  }
+  
+  .weeks div {
+      display: flex;
+      font-size: 1.2em;
+      font-weight: 300;
+      justify-content: space-between;
+      margin-bottom: -10px;
+      width: 100%;
+  }
+  
+  .last-month {
+      opacity: .3;
+  }
+  
+  .weeks span {
+      padding: 10px;
+  }
+  
+  .weeks span.active {
+      background: #ff2323;
+      border-radius: 50%;
+  }
+  
+  .weeks span:not(.last-month):hover {
+      cursor: pointer;
+      font-weight: 600;
+  }
+
+/**************************************************************************/
+
+/* Bottom Footer */
 #bottom-footer {
     height: 75px;
     background-color: black;
@@ -99,6 +268,9 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 #bottom-footer h6 {

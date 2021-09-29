@@ -58,7 +58,7 @@ body {
 }
 
 #highlight {
-    color: rgb(255, 102, 102);
+    color: rgb(255, 66, 66);
 }
 
 .nav-btn {
@@ -182,11 +182,16 @@ body {
 .location-box {
     width: 300px;
     height: 350px;
-    background-color: black;
     margin: 25px 0px 50px 0px;
     border-radius: 15px;
     align-content: flex-end;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
+}
+
+.location-box:hover {
+    filter: brightness(60%);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 3.5px rgba(0, 0, 0, 0.85);
 }
 
 #charlotte {

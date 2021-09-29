@@ -16,9 +16,7 @@ body {
 #container {
     background: url(../assets/call.jpg) no-repeat;
     background-size: 100%;
-    color: black;
     height: 38vh;
-    font-size: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +31,7 @@ body {
 }
 
 #highlight {
-    color: rgb(255, 102, 102);
+    color: rgb(255, 66, 66);
 }
 
 #lux-txt {
@@ -182,6 +180,12 @@ article {
     border-radius: 15px;
     align-content: flex-end;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
+}
+
+.location-box:hover {
+    filter: brightness(60%);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 3.5px rgba(0, 0, 0, 0.85);
 }
 
 #charlotte {

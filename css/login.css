@@ -17,7 +17,7 @@ body {
     background: url(../assets/mustangs-multiple1.jpg) no-repeat;
     background-size: 100%;
     color: black;
-    height: 60vh;
+    height: 55vh;
     font-size: 48px;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 #highlight {
-    color: rgb(255, 102, 102);
+    color: rgb(255, 66, 66);
 }
 
 #lux-txt {
@@ -145,6 +145,7 @@ article {
     font-size: 26px;
     padding-left: 10px;
     border-radius: 4px;
+    border: 1px solid rgb(85, 85, 85);
 }
 
 #login-btn,
