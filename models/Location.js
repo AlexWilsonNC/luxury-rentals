@@ -11,16 +11,20 @@ Location.init(
         primaryKey: true,
         autoIncrement: true
       },
-      city_name: {
+      city: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      airport: {
         type: DataTypes.STRING,
         allowNull: false,
       },
       latitude: {
-        type: DataTypes.FLOAT,
+        type: DataTypes.DECIMAL,
         allowNull: false
       },
       longitude: {
-        type: DataTypes.FLOAT,
+        type: DataTypes.DECIMAL,
         allowNull: false
       }
     },
