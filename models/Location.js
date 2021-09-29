@@ -19,12 +19,8 @@ Location.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    latitude: {
-      type: DataTypes.FLOAT,
-      allowNull: false
-    },
-    longitude: {
-      type: DataTypes.FLOAT,
+    embed: {
+      type: DataTypes.TEXT,
       allowNull: false
     }
   },
