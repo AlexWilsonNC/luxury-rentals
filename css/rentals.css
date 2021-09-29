@@ -23,7 +23,7 @@ body {
 }
 
 #highlight {
-    color: rgb(255, 102, 102);
+    color: rgb(255, 66, 66);
 }
 
 #lux-txt {
@@ -98,19 +98,27 @@ body {
 
 /**/
 
-header {
-    background: url(../assets/garage.jpg) no-repeat;
+#header {
+    background: url(../assets/viper-wallaper.jpg) no-repeat;
     background-size: 100%;
     height: 50vh;
 }
 
-select {
-    width: 100px;
-    font-size: 28px;
+#search-area {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 15vh;
+}
+
+.dropdown {
+    width: 250px;
+    font-size: 24px;
 }
 
 #container {
-    padding: 50px;
+    padding: 0px 25px 0px 25px;
 }
 
 #all-cars {
@@ -118,15 +126,15 @@ select {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 100px 0px 50px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 .card {
     width: 450px;
     height: 380px;
-    margin-top: 50px;
+    margin-bottom: 50px;
     /* border: 0.5px solid grey; */
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #fff;
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
 }
@@ -140,8 +148,8 @@ select {
     width: 450px;
     height: 253px;
     overflow: hidden;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .card img:hover {
