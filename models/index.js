@@ -3,25 +3,31 @@ const Location = require('./Location');
 const Category = require('./Category');
 const User = require('./User');
 const Reservation = require('./Reservation');
+const CarLocation = require('./CarLocation');
 
 
 // TODO: add through references and create models to serve as through references
 // below methods incomplete
 
-Car.belongsTo(Location, {
-    foreignKey: 'location_id',
+Car.belongsToMany(Location, {
+    through: {
+        model: CarLocation,
+        unique: false
+    }
 });
 
-Location.hasMany(Car, {
-    foreignKey: 'location_id'
+Location.belongsToMany(Car, {
+    through: {
+        model: CarLocation,
+        unique: false
+    }
 });
 
-Car.belongsTo(Category, {
-    foreignKey: 'category_id',
-});
-
-Category.hasMany(Car, {
-    foreignKey: 'category_id',
-});
-
-module.exports = { Car, Location, Category, User, Reservation };
+module.exports = {
+    Car,
+    Location,
+    CarLocation,
+    Category,
+    User,
+    Reservation
+};
