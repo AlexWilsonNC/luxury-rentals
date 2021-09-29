@@ -205,7 +205,7 @@ body {
 }
 
 #chicago {
-    background-image: url(assets/stl.jpg);
+    background-image: url(assets/chicago.jpg);
     overflow: hidden;
 }
 
@@ -235,6 +235,7 @@ body {
 
 #callnow h5 {
     font-size: 36px;
+    color: yellow;
 }
 
 .callnow-btn {
