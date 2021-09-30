@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(./public/assets/whitebg.jpg) no-repeat center center fixed;
+    background: url(../assets/whitebg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -13,7 +13,7 @@ body {
     font-family: 'Montserrat', sans-serif;}
 
 #container {
-    background: url(./public/assets/lambo-1.jpg) no-repeat;
+    background: url(../assets/lambo-1.jpg) no-repeat;
     background-size: 100%;
     height: 100vh;
     color: #fff;
@@ -196,27 +196,27 @@ body {
 }
 
 #charlotte {
-    background-image: url(./public/assets/charlotte.jpg);
+    background-image: url(../assets/charlotte.jpg);
     overflow: hidden;
 }
 
 #nyc {
-    background-image: url(./public/assets/nyc.jpg);
+    background-image: url(../assets/nyc.jpg);
     overflow: hidden;
 }
 
 #san-francisco {
-    background-image: url(./public/assets/san-francisco.jpg);
+    background-image: url(../assets/san-francisco.jpg);
     overflow: hidden;
 }
 
 #chicago {
-    background-image: url(./public/assets/chicago.jpg);
+    background-image: url(../assets/chicago.jpg);
     overflow: hidden;
 }
 
 #callnow {
-    background: url(./public/assets/corv.jpg) no-repeat;
+    background: url(../assets/corv.jpg) no-repeat;
     background-size: 100%;
     height: 75vh;
     color: #fff;

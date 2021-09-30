@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(../public/assets/whitebg.jpg) no-repeat center center fixed;
+    background: url(../assets/whitebg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,7 +14,7 @@ body {
 }
 
 #container {
-    background: url(../public/assets/mustangs-multiple1.jpg) no-repeat;
+    background: url(../assets/mustangs-multiple1.jpg) no-repeat;
     background-size: 100%;
     color: black;
     height: 55vh;
