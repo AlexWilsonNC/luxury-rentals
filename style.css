@@ -34,6 +34,7 @@ body {
     line-height: 115px;
     margin: 0px 0px 0px 75px;
     font-family: 'Italiana', serif;
+    float: left;
 }
 
 .nav-right {
@@ -280,4 +281,39 @@ body {
     line-height: 75px;
 }
 
-/* @media screen and (max-width ) */
+@media screen and (max-width: 1278px) {
+    .nav-right {
+        margin-right: 10px;
+    }
+
+    .nav-right a {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    #container {
+        margin-top: 100px;
+    }
+    #main-nav {
+        height: 175px;
+        top: 0;
+    }
+    #logo-center {
+        display: flex;
+        justify-content: center;
+    }
+    #lux-txt {
+        font-size: 38px;
+        line-height: 65px;
+        margin: 0px 0px 0px 0px;
+        font-family: 'Italiana', serif;
+        float: none;
+    }
+    .nav-right {
+        display: flex;
+        justify-content: space-around;
+        float: none;
+        margin-right: 0px;    
+    }
+}

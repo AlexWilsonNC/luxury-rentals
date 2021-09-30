@@ -137,16 +137,12 @@ article {
     font-size: 26px;
 }
 
-#main-box a {
+#main-box a, h3 {
     font-size: 36px;
 }
 
 #email a:hover {
     text-decoration: underline;
-}
-
-#main-box h3 {
-    font-size: 36px;
 }
 
 #location-cut {
