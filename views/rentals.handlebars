@@ -1,0 +1,35 @@
+<div id="header"></div>
+
+<div id="search-area">
+    <select class="dropdown" name="dropdown">
+        <option value="" id="location-selector">Location</option>
+        <option value="charlotte" id="location-selector-charlotte">Charlotte</option>
+        <option value="chicago" id="location-selector-chicago">Chicago</option>
+        <option value="nyc" id="location-selector-nyc">New York City</option>
+        <option value="san-francisco" id="location-selector-san-francisco">San Francisco</option>
+    </select>
+    <select class="dropdown" name="dropdown">
+        <option value="" id="car-color">Color</option>
+        <option value="white" id="car-white">White</option>
+        <option value="black" id="car-black">Black</option>
+        <option value="grey" id="car-grey">Grey</option>
+        <option value="yellow" id="car-yellow">Yellow</option>
+        <option value="red" id="car-red">Red</option>
+        <option value="orange" id="car-orange">Orange</option>
+        <option value="blue" id="car-blue">Blue</option>
+    </select>
+    <select class="dropdown" name="dropdown">
+        <option value="" id="door-count">Doors</option>
+        <option value="door-cnt-2" id="door-count-2">2 Doors</option>
+        <option value="door-cnt-4" id="door-count-4">4 Doors</option>
+    </select>
+</div>
+
+<div id="container">
+    <ol id="all-cars">
+        {{#each cars as |car|}}
+        {{> car-details}}
+        {{/each}}
+    </ol>
+
+</div>
