@@ -36,7 +36,7 @@ const carData = [
     {
         "year": "2018",
         "make": "Chevrolet",
-        "model": "Camaro (Bumblebee Edition)",
+        "model": "Camaro (Bumblebee)",
         "price": "500",
         "color": "Yellow",
         "image": "/assets/inventory/chevrolet-camaro-bumblebee-2018.jpg"
