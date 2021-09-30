@@ -57,9 +57,15 @@
 
     <div id="container">
         <ol id="all-cars">
-            {{#each cars as |car|}}
-            {{> car-details}}
-            {{/each}}
+            {{#if location}}
+                {{#each location.cars as |car|}}
+                {{> car-details}}
+                {{/each}}
+            {{else}}
+                {{#each cars as |car|}}
+                {{> car-details}}
+                {{/each}}
+            {{/if}}
         </ol>
     
     </div>

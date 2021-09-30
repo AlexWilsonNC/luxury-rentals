@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   }
 });
 
-router.get('/location/:id', async (req, res) => {
+router.get('/rentals/:id', async (req, res) => {
   try {
     const locationData = await Location.findByPk(req.params.id, {
       include: [
@@ -30,7 +30,7 @@ router.get('/location/:id', async (req, res) => {
     });
 
     const location = locationData.get({ plain: true });
-    res.render('location', { location });
+    res.render('rentals', { location });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -54,5 +54,13 @@ router.get('/rentals', async (req, res) => {
   }
 });
 
+router.get('/contact', (req, res) => {
+  try {
+    res.render('contact');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
