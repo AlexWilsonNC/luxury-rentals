@@ -2,6 +2,7 @@ const sequelize = require('../config/connection');
 const seedCars = require('./car-seeds');
 const seedLocations = require('./location-seeds');
 const seedCarLocations = require('./car-location-seeds');
+const seedUsers = require('./user-seeds');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -15,6 +16,9 @@ const seedDatabase = async () => {
 
   await seedCarLocations();
   console.log('\n----- CAR LOCATIONS SEEDED -----\n');
+
+  await seedUsers();
+  console.log('\n----- USERS SEEDED -----\n');
 
   process.exit(0);
 };
