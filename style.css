@@ -34,6 +34,7 @@ body {
     line-height: 115px;
     margin: 0px 0px 0px 75px;
     font-family: 'Italiana', serif;
+    float: left;
 }
 
 .nav-right {
@@ -130,7 +131,7 @@ body {
 #about {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 25px 100px 25px 100px;
 }
 
@@ -279,5 +280,102 @@ body {
 .bootom-nav {
     line-height: 75px;
 }
+@media screen and (max-width: 1400px) {
+    #container {
+        height: 85vh
+    }
+    #about {
+        justify-content: space-evenly;
+    }
+    #about-img {
+        width: 400px;
+    }
+    #about-txt {
+        width: 600px;
+    }
+}
 
-/* @media screen and (max-width ) */
+@media screen and (max-width: 1278px) {
+    .nav-right {
+        margin-right: 10px;
+    }
+    .nav-right a {
+        margin-right: 20px;
+    }
+    #advert {
+        top: 250px;
+    }
+    #container {
+        height: 75vh;
+    }
+    
+}
+
+@media screen and (max-width: 1025px) {
+    #container {
+        margin-top: 100px;
+        height: 60vh;
+    }
+    #main-nav {
+        height: 175px;
+        top: 0;
+    }
+    #logo-center {
+        display: flex;
+        justify-content: center;
+    }
+    #lux-txt {
+        font-size: 38px;
+        line-height: 65px;
+        margin: 0px 0px 0px 0px;
+        font-family: 'Italiana', serif;
+        float: none;
+    }
+    .nav-right {
+        display: flex;
+        justify-content: space-around;
+        float: none;
+        margin-right: 0px;    
+    }
+    #advert {
+        font-size: 16px;
+        top: 150px;
+        left: 40px;
+    }
+    .book-now-btn {
+        padding: 7px 15px 7px 15px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #lux-text {
+        /* push down a little? */
+    }
+    #advert {
+        font-size: 12px;
+        top: 100px;
+        left: 20px;
+        width: 250px;
+    }
+    .book-now-btn {
+        padding: 6px 12px 6px 12px;
+        font-size: 16px;
+    }
+    #container {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    /* Collapse nav into hamburger */
+    /* adjust main pic*/
+    #advert {
+        display: none;
+    }
+    .advert-btn {
+        display: none;
+    }
+    #container {
+        margin-top: 150px;
+    }
+}
