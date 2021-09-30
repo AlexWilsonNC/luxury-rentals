@@ -10,6 +10,23 @@ router.get('/', (req, res) => {
   }
 });
 
+router.get('/rentals', async (req, res) => {
+  try {
+    const carData = await Car.findAll();
+
+    const cars = carData.map((car) =>
+      car.get({ plain: true })
+    );
+
+    res.render('rentals', {
+      cars,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 router.get('/rentals/:id', async (req, res) => {
   try {
     const locationData = await Location.findByPk(req.params.id, {
@@ -31,23 +48,6 @@ router.get('/rentals/:id', async (req, res) => {
 
     const location = locationData.get({ plain: true });
     res.render('rentals', { location });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-router.get('/rentals', async (req, res) => {
-  try {
-    const carData = await Car.findAll();
-
-    const cars = carData.map((car) =>
-      car.get({ plain: true })
-    );
-
-    res.render('rentals', {
-      cars,
-    });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
