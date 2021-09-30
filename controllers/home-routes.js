@@ -54,5 +54,13 @@ router.get('/rentals', async (req, res) => {
   }
 });
 
+router.get('/contact', (req, res) => {
+  try {
+    res.render('contact');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
