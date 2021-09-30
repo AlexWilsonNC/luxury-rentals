@@ -10,7 +10,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Montserrat', sans-serif;}
+    font-family: 'Montserrat', sans-serif;
+}
 
 #container {
     background: url(../assets/lambo-1.jpg) no-repeat;
@@ -132,7 +133,7 @@ body {
     display: flex;
     justify-content: space-around;
     /* flex-wrap: wrap; */
-    margin: 25px 100px 25px 100px;
+    margin: 25px 0px 25px 0px;
 }
 
 #about-img {
@@ -280,7 +281,12 @@ body {
 .bootom-nav {
     line-height: 75px;
 }
-@media screen and (max-width: 1400px) {
+
+#hidden-hr1 {
+    display: none;
+}
+
+/* @media screen and (max-width: 1400px) {
     #container {
         height: 85vh
     }
@@ -292,8 +298,28 @@ body {
     }
     #about-txt {
         width: 600px;
+        margin-top: 0px;
     }
-}
+    #about-txt h2 {
+        font-size: 26px;
+    }
+    #about-txt p {
+        margin-top: 7px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    #locations {
+        margin: 0px 25px 0px 25px;
+    }
+    .location-box {
+        width: 250px;
+        height: 325px;
+    }
+    #locations footer {
+        top: 275px;
+        font-size: 32px;
+    }
+} */
 
 @media screen and (max-width: 1278px) {
     .nav-right {
@@ -308,7 +334,45 @@ body {
     #container {
         height: 75vh;
     }
-    
+    #advert {
+        top: 200px;
+        left: 55px;
+    }
+    #about-img {
+        width: 300px;
+    }
+    #about-txt {
+        width: 500px;
+        margin-top: 0px;
+    }
+    #about-txt h2 {
+        font-size: 22px;
+    }
+    #about-txt p {
+        margin-top: 4px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+    #locations {
+        margin: 0px 10px 0px 10px;
+    }
+    .location-box {
+        width: 225px;
+        height: 275px;
+    }
+    #locations footer {
+        top: 235px;
+        font-size: 28px;
+    }
+    #callnow {
+        height: 60vh;
+    }
+    /* .callnow-content {
+        margin: 0px;
+    } */
+    #callnow h4 {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 1025px) {
@@ -345,6 +409,37 @@ body {
     .book-now-btn {
         padding: 7px 15px 7px 15px;
     }
+    #about {
+        margin: 25px 0px 25px 0px;
+        flex-wrap: wrap;
+    }
+    #about-txt {
+        width: 750px;
+    }
+    #about-txt h2 {
+        font-size: 28px;
+    }
+    #about-txt p {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    #hidden-hr1 {
+        display: inline-block;
+        width: 100%;
+        border: 0.2px solid grey;
+    }
+    #locations {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #locations footer {
+        top: 260px;
+    }
+    .location-box {
+        width: 250px;
+        height: 300px;
+        margin: 0x 5px 5px 5px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -352,10 +447,10 @@ body {
         /* push down a little? */
     }
     #advert {
-        font-size: 12px;
-        top: 100px;
-        left: 20px;
-        width: 250px;
+        display: none;
+    }
+    .advert-btn {
+        display: none;
     }
     .book-now-btn {
         padding: 6px 12px 6px 12px;
@@ -363,18 +458,35 @@ body {
     }
     #container {
         margin-top: 150px;
+        height: 40vh;
+    }
+    #about {
+        width: 500px;
+        margin: 25px auto;
+        justify-content: center;
+    }
+    #about-txt {
+        /* ??? */
+    }
+    #locations {
+        width: 75%;
+        margin-bottom: 25px;
+        margin: 0 auto;
+    }
+    #locations footer {
+        top: 210px;
+        font-size: 26px;
+    }
+    .location-box {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 5px;
     }
 }
 
 @media screen and (max-width: 560px) {
     /* Collapse nav into hamburger */
     /* adjust main pic*/
-    #advert {
-        display: none;
-    }
-    .advert-btn {
-        display: none;
-    }
     #container {
         margin-top: 150px;
     }
