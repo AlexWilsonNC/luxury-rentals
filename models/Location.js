@@ -19,10 +19,6 @@ Location.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    featured: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
     embed: {
       type: DataTypes.TEXT,
       allowNull: false
