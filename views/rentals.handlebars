@@ -51,34 +51,34 @@
         </a>
     </div>
 
+    {{#if location}}
     <div id="contact-and-map">
         <div id="main-box">
             <div id="left">
                 <div id="featured-car">
-                    {{> car-details}}
+                    {{> featured-car}}
                 </div>
             </div>
-            <!--input featured car's card via handlebar here-->
             <div id="right">
                 <div id="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.9313367241693!2d-87.91118658379509!3d41.98028396699094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb4276a7762f3%3A0x511747070259ad4b!2sO%27Hare%20International%20Airport!5e0!3m2!1sen!2sus!4v1632940633152!5m2!1sen!2sus"
-                        width="490" height="375" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="{{location.embed}}" width="490" height="375" allowfullscreen=""
+                        loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </div>
+    {{/if}}
 
     <div id="container">
         <ol id="all-cars">
             {{#if location}}
-                {{#each location.cars as |car|}}
-                {{> car-details}}
-                {{/each}}
+            {{#each location.cars as |car|}}
+            {{> car-details}}
+            {{/each}}
             {{else}}
-                {{#each cars as |car|}}
-                {{> car-details}}
-                {{/each}}
+            {{#each cars as |car|}}
+            {{> car-details}}
+            {{/each}}
             {{/if}}
         </ol>
     </div>

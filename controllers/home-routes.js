@@ -63,4 +63,13 @@ router.get('/contact', (req, res) => {
   }
 });
 
+router.get('/book-now', (req, res) => {
+  try {
+    res.render('book-now');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
