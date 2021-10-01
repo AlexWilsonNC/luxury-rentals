@@ -10,6 +10,8 @@
 
 // document.getElementById('total-purchase').innerHTML = 'Rental Total $' + total;
 
+
+
 const confirmBtnEl = document.querySelector('.confirm-btn');
 
 const bookNowFormHandler = async (event) => {
