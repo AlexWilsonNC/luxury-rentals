@@ -46,11 +46,15 @@
                 <div class="left">
                     <h2>Past Rental:</h2>
                     <div class="info">
-                        <p class="rantal-date">Oct 1 - Oct 4</p>
-                        <p class="car-name">Dodge Viper</p>
-                        <p class="location">New York</p>
-                        <p class="daily-price">$_ per Day</p>
-                        <p class="total-price">Total: $1000</p>
+                        <div class="info-left">
+                            <p class="rantal-date">Oct 1 - Oct 4</p>
+                            <p class="daily-price">$_ per Day</p>
+                            <p class="total-price">Total: $1000</p>
+                        </div>
+                        <div class="info-right">
+                            <p class="car-name">Dodge Viper</p>
+                            <p class="location">New York</p>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -59,19 +63,9 @@
                         alt="{{booking.cars.[0].make}} {{booking.cars.[0].model}}"> -->
                 </div>
             </div>
-            <div class="prev-rental">
-                <div class="left">
-                    <h2>Past Rental:</h2>
-                    <p id="rantal-date">Oct 1 - Oct 4</p>
-                    <p id="daily-price">$_ per Day</p>
-                    <p id="total-price">Total: $1000</p>
-                </div>
-                <div class="right">
-                    <img class="img-right" src="../public/assets/inventory/dodge-viper-2016.jpg">
-                    <!-- <img id="img-right" src="{{booking.cars.[0].image}}"
-                        alt="{{booking.cars.[0].make}} {{booking.cars.[0].model}}"> -->
-                </div>
-            </div>
+
+            <!-- Additional rentals are added -->
+
         </div>
     </article>
 
