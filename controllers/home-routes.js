@@ -62,6 +62,15 @@ router.get('/contact', (req, res) => {
   }
 });
 
+router.get('/account', (req, res) => {
+  try {
+    res.render('account', { logged_in: req.session.logged_in });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
