@@ -22,7 +22,7 @@ body {
 
 #main-nav {
     height: 115px;
-    background-color: black;
+    background-image: url(../assets/black-bg.jpg);
     color: #fff;
     position: fixed;
     width: 100%;
@@ -65,7 +65,7 @@ body {
 
 .nav-btn {
     border: 1px solid rgb(110, 110, 110);
-    background: transparent;
+    background: rgba(0, 0, 0, 0.658);
     color: #fff;
 }
 
@@ -245,6 +245,10 @@ body {
     color: yellow;
 }
 
+#callnow h5:hover {
+    color: white;
+}
+
 .callnow-btn {
     border: 1px solid rgb(0, 0, 0);
     background: rgb(255, 255, 255);
@@ -286,40 +290,18 @@ body {
     display: none;
 }
 
-/* @media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
+    #locations {
+        width: 100%;
+        margin: 0px auto;
+    }
     #container {
         height: 85vh
     }
-    #about {
-        justify-content: space-evenly;
+    #callnow {
+        height: 60vh;
     }
-    #about-img {
-        width: 400px;
-    }
-    #about-txt {
-        width: 600px;
-        margin-top: 0px;
-    }
-    #about-txt h2 {
-        font-size: 26px;
-    }
-    #about-txt p {
-        margin-top: 7px;
-        line-height: 20px;
-        font-size: 16px;
-    }
-    #locations {
-        margin: 0px 25px 0px 25px;
-    }
-    .location-box {
-        width: 250px;
-        height: 325px;
-    }
-    #locations footer {
-        top: 275px;
-        font-size: 32px;
-    }
-} */
+}
 
 @media screen and (max-width: 1278px) {
     .nav-right {
@@ -354,7 +336,8 @@ body {
         font-size: 14px;
     }
     #locations {
-        margin: 0px 10px 0px 10px;
+        width: 100%;
+        margin: 0px auto;
     }
     .location-box {
         width: 225px;
@@ -367,9 +350,9 @@ body {
     #callnow {
         height: 60vh;
     }
-    /* .callnow-content {
-        margin: 0px;
-    } */
+    .callnow-content {
+        margin: 4px;
+    }
     #callnow h4 {
         margin-top: 40px;
     }
@@ -392,7 +375,6 @@ body {
         font-size: 38px;
         line-height: 65px;
         margin: 0px 0px 0px 0px;
-        font-family: 'Italiana', serif;
         float: none;
     }
     .nav-right {
@@ -410,7 +392,7 @@ body {
         padding: 7px 15px 7px 15px;
     }
     #about {
-        margin: 25px 0px 25px 0px;
+        margin: 25px 25px 25px 25px;
         flex-wrap: wrap;
     }
     #about-txt {
@@ -440,6 +422,34 @@ body {
         height: 300px;
         margin: 0x 5px 5px 5px;
     }
+    #callnow {
+        height: 50vh;
+    }
+    .callnow-content {
+        margin: 5px;
+    }
+    #callnow h4 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    #callnow {
+        height: 40vh;
+    }
+    .callnow-content {
+        margin: 5px;
+    }
+    #callnow h4 {
+        margin-top: 8px;
+        font-size: 34px;
+    }
+    #callnow p {
+        font-size: 20px;
+    }
+    #callnow h5 {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -465,12 +475,8 @@ body {
         margin: 25px auto;
         justify-content: center;
     }
-    #about-txt {
-        /* ??? */
-    }
     #locations {
         width: 75%;
-        margin-bottom: 25px;
         margin: 0 auto;
     }
     #locations footer {
@@ -480,7 +486,24 @@ body {
     .location-box {
         width: 200px;
         height: 250px;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
+    }
+    #callnow {
+        height: 30vh;
+        margin-top: 25px;
+    }
+    .callnow-content {
+        margin: 10px;
+    }
+    #callnow h4 {
+        margin-top: 10px;
+        font-size: 42px;
+    }
+    #callnow p {
+        display: none;
+    }
+    #callnow h5 {
+        font-size: 38px;
     }
 }
 
