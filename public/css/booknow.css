@@ -36,6 +36,7 @@ body {
     color: white;
     margin-right: 60px;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top-nav {
@@ -91,6 +92,11 @@ body {
     left: 120%;
     transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
     -webkit-transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+#logout {
+    text-align: center;
+    font-size: 20px;
 }
 
 /* Main Content on Page */
@@ -174,11 +180,6 @@ article {
     cursor: pointer;
     background-color: grey;
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.75);
-}
-
-#logout {
-    text-align: center;
-    font-size: 26px;
 }
 
 /* Calendar */
