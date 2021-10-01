@@ -192,6 +192,9 @@ article {
     #container {
         height: 50vh;
     }
+    article {
+        min-height: 50vh;
+    }
 }
 
 @media screen and (max-width: 1278px) {
@@ -238,6 +241,9 @@ article {
     #bottom-footer {
         position: relative;
         bottom: 0;
+    }
+    article {
+        min-height: 90vh;
     }
 }
 

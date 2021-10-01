@@ -183,90 +183,6 @@ article {
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.75);
 }
 
-/* Calendar */
-/**************************************************************************/
-
-  body {
-      font-family: 'Roboto', sans-serif;
-  }
-  
-  .calendar-container {
-      max-width: 300px;
-      width: 100%;
-      margin-bottom: 25px;
-  }
-  
-  .calendar {
-      background: #222222;
-      border-radius: 7px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-      height: 275px;
-      transform-style: preserve-3d;
-      width: 100%;
-  }
-  
-  .current-date {
-      border-bottom: 1px solid rgb(255, 255, 255);
-      padding: 10px 0px 10px 0px;
-  }
-  
-  .current-date h1 {
-      color: #fff;
-      font-size: 1.4em;
-      font-weight: 300;
-      margin-left: 25px;
-  }
-  
-  .week-days {
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      font-weight: 500;
-      padding: 10px 20px 0px 20px;
-  }
-  
-  /* .days {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  } */
-  
-  .weeks {
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      padding: 5px 20px 0px 6px;
-  }
-  
-  .weeks div {
-      display: flex;
-      font-size: 1.2em;
-      font-weight: 300;
-      justify-content: space-between;
-      margin-bottom: -10px;
-      width: 100%;
-  }
-  
-  .last-month {
-      opacity: .3;
-  }
-  
-  .weeks span {
-      padding: 10px;
-  }
-  
-  .weeks span.active {
-      background: #ff2323;
-      border-radius: 50%;
-  }
-  
-  .weeks span:not(.last-month):hover {
-      cursor: pointer;
-      font-weight: 600;
-  }
-
-/**************************************************************************/
-
 /* Bottom Footer */
 #bottom-footer {
     height: 75px;
@@ -293,16 +209,7 @@ article {
 }
 
 @media screen and (max-width: 1400px) {
-    #locations {
-        width: 70%;
-        margin: 0px auto;
-    }
-    #container {
-        height: 85vh
-    }
-    #callnow {
-        height: 60vh;
-    }
+    
 }
 
 @media screen and (max-width: 1278px) {
@@ -312,58 +219,9 @@ article {
     .nav-right a {
         margin-right: 20px;
     }
-    #advert {
-        top: 250px;
-    }
-    #container {
-        height: 75vh;
-    }
-    #advert {
-        top: 200px;
-        left: 55px;
-    }
-    #about-img {
-        width: 300px;
-    }
-    #about-txt {
-        width: 500px;
-        margin-top: 0px;
-    }
-    #about-txt h2 {
-        font-size: 22px;
-    }
-    #about-txt p {
-        margin-top: 4px;
-        line-height: 15px;
-        font-size: 14px;
-    }
-    #locations {
-        margin: 0px 10px 0px 10px;
-    }
-    .location-box {
-        width: 225px;
-        height: 275px;
-    }
-    #locations footer {
-        top: 235px;
-        font-size: 28px;
-    }
-    #callnow {
-        height: 60vh;
-    }
-    .callnow-content {
-        margin: 4px;
-    }
-    #callnow h4 {
-        margin-top: 40px;
-    }
 }
 
 @media screen and (max-width: 1025px) {
-    #container {
-        margin-top: 100px;
-        height: 60vh;
-    }
     #main-nav {
         height: 175px;
         top: 0;
@@ -385,134 +243,22 @@ article {
         float: none;
         margin-right: 0px;    
     }
-    #advert {
-        font-size: 16px;
-        top: 150px;
-        left: 40px;
-    }
-    .book-now-btn {
-        padding: 7px 15px 7px 15px;
-    }
-    #about {
-        margin: 25px 25px 25px 25px;
-        flex-wrap: wrap;
-    }
-    #about-txt {
-        width: 750px;
-    }
-    #about-txt h2 {
-        font-size: 28px;
-    }
-    #about-txt p {
-        font-size: 22px;
-        line-height: 25px;
-    }
-    #hidden-hr1 {
-        display: inline-block;
-        width: 100%;
-        border: 0.2px solid grey;
-    }
-    #locations {
-        width: 70%;
-        margin: 0 auto;
-    }
-    #locations footer {
-        top: 260px;
-    }
-    .location-box {
-        width: 250px;
-        height: 300px;
-        margin: 0x 5px 5px 5px;
-    }
-    #callnow {
-        height: 50vh;
-    }
-    .callnow-content {
-        margin: 5px;
-    }
-    #callnow h4 {
-        margin-top: 20px;
+    #main-box {
+        height: 60vh;
+        margin-top: 100px;
     }
 }
 
 @media screen and (max-width: 885px) {
-    #callnow {
-        height: 40vh;
-    }
-    .callnow-content {
-        margin: 5px;
-    }
-    #callnow h4 {
-        margin-top: 8px;
-        font-size: 34px;
-    }
-    #callnow p {
-        font-size: 20px;
-    }
-    #callnow h5 {
-        font-size: 26px;
-    }
+    
 }
 
 @media screen and (max-width: 720px) {
     #lux-text {
         /* push down a little? */
     }
-    #advert {
-        display: none;
-    }
-    .advert-btn {
-        display: none;
-    }
-    .book-now-btn {
-        padding: 6px 12px 6px 12px;
-        font-size: 16px;
-    }
-    #container {
-        margin-top: 150px;
-        height: 40vh;
-    }
-    #about {
-        width: 500px;
-        margin: 25px auto;
-        justify-content: center;
-    }
-    #locations {
-        width: 75%;
-        margin: 0 auto;
-    }
-    #locations footer {
-        top: 210px;
-        font-size: 26px;
-    }
-    .location-box {
-        width: 200px;
-        height: 250px;
-        margin-bottom: 2px;
-    }
-    #callnow {
-        height: 30vh;
-        margin-top: 25px;
-    }
-    .callnow-content {
-        margin: 10px;
-    }
-    #callnow h4 {
-        margin-top: 10px;
-        font-size: 42px;
-    }
-    #callnow p {
-        display: none;
-    }
-    #callnow h5 {
-        font-size: 38px;
-    }
 }
 
 @media screen and (max-width: 560px) {
-    /* Collapse nav into hamburger */
-    /* adjust main pic*/
-    #container {
-        margin-top: 150px;
-    }
+    
 }
