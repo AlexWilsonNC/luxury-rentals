@@ -1,6 +1,3 @@
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +18,11 @@
                 <a href="/">Home</a>
                 <a href="/rentals">Rentals</a>
                 <a id="highlight" href="/contact">Contact</a>
+                {{#if logged_in}}
+                <a id="#logout" href="">Logout</a>
+                {{else}}
                 <a href="/login">Login</a>
+                {{/if}}
                 <a href="/book-now"><button class="book-now-btn nav-btn">Book Now</button></a>
             </div>
         </nav>
@@ -65,8 +66,15 @@
         <div class="nav-right bootom-nav">
             <a href="/rentals">Rentals</a>
             <a href="/contact">Contact</a>
+            {{#if logged_in}}
+            <a id="#logout" href="">Logout</a>
+            {{else}}
             <a href="/login">Login</a>
+            {{/if}}
         </div>
     </footer>
-</body>
 
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
