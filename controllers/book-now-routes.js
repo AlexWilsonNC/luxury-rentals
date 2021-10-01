@@ -61,7 +61,7 @@ router.get('/car/:car', withAuth, async (req, res) => {
             car.get({ plain: true })
         );
         
-        const carData = await Car.findByPk(req.params.car, {
+        const choiceData = await Car.findByPk(req.params.car, {
             include: [
                 {
                     model: Location,
@@ -75,7 +75,7 @@ router.get('/car/:car', withAuth, async (req, res) => {
             ],
         });
 
-        const carChoice = carData.get({ plain: true });
+        const carChoice = choiceData.get({ plain: true });
         const cities = carChoice.locations;
         res.render('booknow', { cities, cars, carChoice, logged_in: req.session.logged_in });
     } catch (err) {
