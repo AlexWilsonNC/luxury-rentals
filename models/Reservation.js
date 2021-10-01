@@ -1,4 +1,3 @@
-// TODO: model for reservation
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
@@ -23,6 +22,13 @@ Reservation.init(
             type: DataTypes.INTEGER,
             references: {
                 model: 'car',
+                key: 'id',
+            }
+        },
+        location_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'location',
                 key: 'id',
             }
         }
