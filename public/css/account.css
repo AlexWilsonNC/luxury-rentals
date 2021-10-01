@@ -25,6 +25,10 @@ body {
     margin-top: -50px;
 }
 
+#account {
+    color: rgb(255, 66, 66);
+}
+
 #main-nav {
     height: 115px;
     background-image: url(../assets/black-bg.jpg);
@@ -33,12 +37,14 @@ body {
     width: 100%;
     top: 0;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #lux-txt {
     color: #fff;
     font-size: 58px;
-    line-height: 115px;
     margin: 0px 0px 0px 75px;
     font-family: 'Italiana', serif;
     float: left;
@@ -51,10 +57,6 @@ body {
     font-size: 20px;
 }
 
-.top-nav {
-    line-height: 115px;
-}
-
 .nav-right a {
     margin-right: 60px;
     color: rgb(168, 168, 168);
@@ -63,6 +65,37 @@ body {
 .nav-right a:hover {
     color: #fff;
     transition: 0.25s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1d1d1dde;
+    width: 115px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    margin-left: 15px;
+}
+
+.dropdown-content a:hover {
+    color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    height: 60px;
 }
 
 .nav-btn {

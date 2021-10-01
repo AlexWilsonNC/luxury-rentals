@@ -22,7 +22,12 @@
                 <a href="/rentals">Rentals</a>
                 <a href="/contact">Contact</a>
                 {{#if logged_in}}
-                <a id="logout" href="">Logout</a>
+                <div class="dropdown">
+                    <a id="account" href="/account">Account ↓</a>
+                    <div class="dropdown-content">
+                        <a class="logout" href="">Logout</a>
+                    </div>
+                </div>
                 {{else}}
                 <a href="/login">Login</a>
                 {{/if}}
@@ -86,7 +91,9 @@
         <p class="callnow-content">We know that the difference is in the details, and you'll feel every inch of it in
             one of our beautiful
             cars. Don't miss out on your chance to experience the awesome!</p>
-        <a href="tel:987-654-3210"><h5 class="callnow-content">Call Now (987) 654-3210</h5></a>
+        <a href="tel:987-654-3210">
+            <h5 class="callnow-content">Call Now (987) 654-3210</h5>
+        </a>
         <a href="/book-now"><button class="book-now-btn callnow-btn callnow-content">Book Now</button></a>
     </div>
 
@@ -96,7 +103,7 @@
             <a href="/rentals">Rentals</a>
             <a href="/contact">Contact</a>
             {{#if logged_in}}
-            <a id="logout" href="">Logout</a>
+            <a class="logout" href="">Logout</a>
             {{else}}
             <a href="/login">Login</a>
             {{/if}}

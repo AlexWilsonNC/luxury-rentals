@@ -69,7 +69,7 @@ router.get('/car/:car', withAuth, async (req, res) => {
         const choiceData = await Car.findByPk(req.params.car);
 
         const carChoice = choiceData.get({ plain: true });
-        const cities = carChoice.locations;
+        // const cities = carChoice.locations;
         res.render('booknow', { cities, cars, carChoice, logged_in: req.session.logged_in });
     } catch (err) {
         console.log(err);
