@@ -30,10 +30,10 @@
         <div id="main-box">
             <div id="left">
                 <select class="dropdown" name="dropdown">
-                    <option value="" id="location-selector">Location</option>
+                    <option value="" id="location-selector">{{booking.city}}, {{booking.airport}}</option>
                 </select>
                 <select class="dropdown" name="dropdown">
-                    <option value="" id="vehicle-selector">Vehicle</option>
+                    <option value="" id="vehicle-selector">{{booking.cars.[0].make}} {{booking.cars.[0].model}}</option>
                 </select>
 
                 <div class="calendar-container">
@@ -107,11 +107,9 @@
 
             <div id="right">
                 <div id="img-generator">
-                    <!-- where image is generated upon selection -->
-                    <img id="img-right" src="/assets/inventory/chevrolet-camaro-bumblebee-2018.jpg">
-                    <!-- ^ IMG placeholder for the time being -->
+                    <img id="img-right" src="{{booking.cars.[0].image}}" alt="{{booking.cars.[0].make}} {{booking.cars.[0].model}}">
                 </div>
-                <p id="price-generator">$500 per Day</p>
+                <p id="price-generator">${{booking.cars.[0].price}} per Day</p>
                 <div id="bottom-right">
                     <!-- Total $ will render based on amount of days selected -->
                     <p id="total-purchase">Total Rent Price: $500</p>
@@ -130,6 +128,6 @@
         </div>
     </footer>
 
-    <script src="booknow.js"></script>
+    <script src="/js/booknow.js"></script>
 </body>
 

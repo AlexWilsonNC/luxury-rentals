@@ -63,9 +63,28 @@ router.get('/contact', (req, res) => {
   }
 });
 
-router.get('/book-now', (req, res) => {
+router.get('/book-now/:city/:car', async (req, res) => {
   try {
-    res.render('book-now');
+    const bookData = await Location.findByPk(req.params.city, {
+      include: [
+        {
+          model: Car,
+          attributes: [
+            'id',
+            'year',
+            'make',
+            'model',
+            'price',
+            'color',
+            'image'
+          ],
+          where: { id: req.params.car }
+        },
+      ],
+    });
+
+    const booking = bookData.get({ plain: true });
+    res.render('booknow', { booking });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
