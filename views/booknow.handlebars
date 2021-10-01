@@ -1,5 +1,3 @@
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 
 <body>
@@ -20,7 +19,11 @@
                 <a href="/">Home</a>
                 <a href="/rentals">Rentals</a>
                 <a href="/contact">Contact</a>
+                {{#if logged_in}}
+                <a id="logout" href="">Logout</a>
+                {{else}}
                 <a href="/login">Login</a>
+                {{/if}}
                 <a href="/book-now"><button class="book-now-btn nav-btn">Book Now</button></a>
             </div>
         </nav>
@@ -32,10 +35,10 @@
         <div id="main-box">
             <div id="left">
                 <select class="dropdown" name="dropdown">
-                    <option value="" id="location-selector">Location</option>
+                    <option value="" id="location-selector">{{booking.city}}, {{booking.airport}}</option>
                 </select>
                 <select class="dropdown" name="dropdown">
-                    <option value="" id="vehicle-selector">Vehicle</option>
+                    <option value="" id="vehicle-selector">{{booking.cars.[0].make}} {{booking.cars.[0].model}}</option>
                 </select>
 
                 <div class="calendar-container">
@@ -109,11 +112,10 @@
 
             <div id="right">
                 <div id="img-generator">
-                    <!-- where image is generated upon selection -->
-                    <img id="img-right" src="/assets/inventory/chevrolet-camaro-bumblebee-2018.jpg">
-                    <!-- ^ IMG placeholder for the time being -->
+                    <img id="img-right" src="{{booking.cars.[0].image}}"
+                        alt="{{booking.cars.[0].make}} {{booking.cars.[0].model}}">
                 </div>
-                <p id="price-generator">$500 per Day</p>
+                <p id="price-generator">${{booking.cars.[0].price}} per Day</p>
                 <div id="bottom-right">
                     <!-- Total $ will render based on amount of days selected -->
                     <p id="total-purchase">Total Rent Price: $500</p>
@@ -129,10 +131,16 @@
         <div class="nav-right bootom-nav">
             <a href="/rentals">Rentals</a>
             <a href="/contact">Contact</a>
+            {{#if logged_in}}
+            <a id="logout" href="">Logout</a>
+            {{else}}
             <a href="/login">Login</a>
+            {{/if}}
         </div>
     </footer>
 
-    <script src="booknow.js"></script>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+    <script src="/js/booknow.js"></script>
 </body>
-
