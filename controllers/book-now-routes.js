@@ -60,20 +60,13 @@ router.get('/car/:car', withAuth, async (req, res) => {
         const cars = carData.map((car) =>
             car.get({ plain: true })
         );
+
+        const locationData = await Location.findAll();
+        const cities = locationData.map((city) =>
+            city.get({ plain: true })
+        );
         
-        const choiceData = await Car.findByPk(req.params.car, {
-            include: [
-                {
-                    model: Location,
-                    attributes: [
-                        'id',
-                        'city',
-                        'airport',
-                        'embed'
-                    ]
-                },
-            ],
-        });
+        const choiceData = await Car.findByPk(req.params.car);
 
         const carChoice = choiceData.get({ plain: true });
         const cities = carChoice.locations;
