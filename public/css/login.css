@@ -23,7 +23,7 @@ body {
 
 #main-nav {
     height: 115px;
-    background-color: black;
+    background-image: url(../assets/black-bg.jpg);
     color: #fff;
     position: fixed;
     width: 100%;
@@ -65,7 +65,7 @@ body {
 
 .nav-btn {
     border: 1px solid rgb(110, 110, 110);
-    background: transparent;
+    background: rgba(0, 0, 0, 0.658);
     color: #fff;
 }
 
@@ -186,6 +186,19 @@ article {
     line-height: 75px;
 }
 
+@media screen and (max-width: 1400px) {
+    #locations {
+        width: 70%;
+        margin: 0px auto;
+    }
+    #container {
+        height: 85vh
+    }
+    #callnow {
+        height: 60vh;
+    }
+}
+
 @media screen and (max-width: 1278px) {
     .nav-right {
         margin-right: 10px;
@@ -196,11 +209,54 @@ article {
     #advert {
         top: 250px;
     }
+    #container {
+        height: 75vh;
+    }
+    #advert {
+        top: 200px;
+        left: 55px;
+    }
+    #about-img {
+        width: 300px;
+    }
+    #about-txt {
+        width: 500px;
+        margin-top: 0px;
+    }
+    #about-txt h2 {
+        font-size: 22px;
+    }
+    #about-txt p {
+        margin-top: 4px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+    #locations {
+        margin: 0px 10px 0px 10px;
+    }
+    .location-box {
+        width: 225px;
+        height: 275px;
+    }
+    #locations footer {
+        top: 235px;
+        font-size: 28px;
+    }
+    #callnow {
+        height: 60vh;
+    }
+    .callnow-content {
+        margin: 4px;
+    }
+    #callnow h4 {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 1025px) {
     #container {
         margin-top: 100px;
+        height: 60vh;
     }
     #main-nav {
         height: 175px;
@@ -231,6 +287,65 @@ article {
     .book-now-btn {
         padding: 7px 15px 7px 15px;
     }
+    #about {
+        margin: 25px 25px 25px 25px;
+        flex-wrap: wrap;
+    }
+    #about-txt {
+        width: 750px;
+    }
+    #about-txt h2 {
+        font-size: 28px;
+    }
+    #about-txt p {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    #hidden-hr1 {
+        display: inline-block;
+        width: 100%;
+        border: 0.2px solid grey;
+    }
+    #locations {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #locations footer {
+        top: 260px;
+    }
+    .location-box {
+        width: 250px;
+        height: 300px;
+        margin: 0x 5px 5px 5px;
+    }
+    #callnow {
+        height: 50vh;
+    }
+    .callnow-content {
+        margin: 5px;
+    }
+    #callnow h4 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    #callnow {
+        height: 40vh;
+    }
+    .callnow-content {
+        margin: 5px;
+    }
+    #callnow h4 {
+        margin-top: 8px;
+        font-size: 34px;
+    }
+    #callnow p {
+        font-size: 20px;
+    }
+    #callnow h5 {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -238,10 +353,10 @@ article {
         /* push down a little? */
     }
     #advert {
-        font-size: 12px;
-        top: 100px;
-        left: 20px;
-        width: 250px;
+        display: none;
+    }
+    .advert-btn {
+        display: none;
     }
     .book-now-btn {
         padding: 6px 12px 6px 12px;
@@ -249,18 +364,48 @@ article {
     }
     #container {
         margin-top: 150px;
+        height: 40vh;
+    }
+    #about {
+        width: 500px;
+        margin: 25px auto;
+        justify-content: center;
+    }
+    #locations {
+        width: 75%;
+        margin: 0 auto;
+    }
+    #locations footer {
+        top: 210px;
+        font-size: 26px;
+    }
+    .location-box {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 2px;
+    }
+    #callnow {
+        height: 30vh;
+        margin-top: 25px;
+    }
+    .callnow-content {
+        margin: 10px;
+    }
+    #callnow h4 {
+        margin-top: 10px;
+        font-size: 42px;
+    }
+    #callnow p {
+        display: none;
+    }
+    #callnow h5 {
+        font-size: 38px;
     }
 }
 
 @media screen and (max-width: 560px) {
     /* Collapse nav into hamburger */
     /* adjust main pic*/
-    #advert {
-        display: none;
-    }
-    .advert-btn {
-        display: none;
-    }
     #container {
         margin-top: 150px;
     }
