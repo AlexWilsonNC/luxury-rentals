@@ -289,7 +289,8 @@ body {
 
 @media screen and (max-width: 1400px) {
     #container {
-        height: 85vh
+        height: 85vh;
+        min-height: 325vh;
     }
     #all-cars {
         justify-content: space-around;
@@ -305,6 +306,9 @@ body {
 }
 
 @media screen and (max-width: 1278px) {
+    #container {
+        min-height: 305vh;
+    }
     .nav-right {
         margin-right: 10px;
     }
@@ -334,7 +338,15 @@ body {
     }
 }
 
+@media screen and (max-width: 1191px) {
+    #container {
+        min-height: 465vh;
+    }
+}
 @media screen and (max-width: 1125px) {
+    #container {
+        min-height: 805vh;
+    }
     #header {
         height: 30vh;
     }
@@ -370,6 +382,9 @@ body {
 }
 
 @media screen and (max-width: 1020px) {
+    #container {
+        min-height: 205vh;
+    }
     #locations {
         width: 70%;
         margin: 0px auto;
@@ -384,6 +399,9 @@ body {
 }
 
 @media screen and (max-width: 885px) {
+    #container {
+        min-height: 415vh;
+    }
     #header {
         height: 30vh;
     }
