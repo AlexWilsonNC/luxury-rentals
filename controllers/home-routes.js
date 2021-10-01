@@ -19,10 +19,7 @@ router.get('/rentals', async (req, res) => {
       car.get({ plain: true })
     );
 
-    res.render('rentals', {
-      cars,
-      logged_in: req.session.logged_in
-    });
+    res.render('rentals', { cars, logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -66,12 +63,10 @@ router.get('/contact', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  // If a session exists, redirect the request to the homepage
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
-
   res.render('login');
 });
 

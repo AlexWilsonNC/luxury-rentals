@@ -1,13 +1,13 @@
+const loginEl = document.querySelector('#login');
+const signUpEl = document.querySelector('#signup');
+
 const loginFormHandler = async (event) => {
-  // Stop the browser from submitting the form so we can do so with JavaScript
   event.preventDefault();
 
-  // Gather the data from the form elements on the page
   const email = document.querySelector('#login-value').value.trim();
   const password = document.querySelector('#login-pw').value.trim();
 
   if (email && password) {
-    // Send the e-mail and password to the server
     const response = await fetch('/api/users/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
@@ -23,15 +23,12 @@ const loginFormHandler = async (event) => {
 };
 
 const signUpFormHandler = async (event) => {
-  // Stop the browser from submitting the form so we can do so with JavaScript
   event.preventDefault();
 
-  // Gather the data from the form elements on the page
   const email = document.querySelector('#signup-value').value.trim();
   const password = document.querySelector('#signup-pw').value.trim();
 
   if (email && password) {
-    // Send the e-mail and password to the server
     const response = await fetch('/api/users/signup', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
@@ -41,14 +38,10 @@ const signUpFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('Failed to log in');
+      alert('Failed to sign up');
     }
   }
 };
 
-document
-  .querySelector('#login')
-  .addEventListener('submit', loginFormHandler);
-document
-  .querySelector('#signup')
-  .addEventListener('submit', signUpFormHandler);
+loginEl.addEventListener('submit', loginFormHandler);
+signUpEl.querySelector('#signup').addEventListener('submit', signUpFormHandler);
