@@ -35,10 +35,10 @@
         <div id="main-box">
             <div id="left">
                 <select class="dropdown" name="dropdown">
-                    <option value="" id="location-selector">{{booking.city}}, {{booking.airport}}</option>
+                    <option value="{{booking.id}}" id="location-selector">{{booking.city}}, {{booking.airport}}</option>
                 </select>
                 <select class="dropdown" name="dropdown">
-                    <option value="" id="vehicle-selector">{{booking.cars.[0].make}} {{booking.cars.[0].model}}</option>
+                    <option value="{{booking.cars.[0].id}}" id="vehicle-selector">{{booking.cars.[0].make}} {{booking.cars.[0].model}}</option>
                 </select>
 
                 <div class="calendar-container">

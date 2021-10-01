@@ -4,10 +4,6 @@ const User = require('./User');
 const Reservation = require('./Reservation');
 const CarLocation = require('./CarLocation');
 
-
-// TODO: add through references and create models to serve as through references
-// below methods incomplete
-
 Car.belongsToMany(Location, {
     through: {
         model: CarLocation,
@@ -20,6 +16,32 @@ Location.belongsToMany(Car, {
         model: CarLocation,
         unique: false
     }
+});
+
+Car.belongsToMany(User, {
+    through: {
+        model: Reservation,
+        unique: false
+    }
+});
+
+User.belongsToMany(Car, {
+    through: {
+        model: Reservation,
+        unique: false
+    }
+});
+
+Reservation.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+Reservation.belongsTo(Car, {
+    foreignKey: 'car_id'
+});
+
+Reservation.belongsTo(Location, {
+    foreignKey: 'location_id'
 });
 
 module.exports = {
