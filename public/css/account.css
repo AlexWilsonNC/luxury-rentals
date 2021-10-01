@@ -41,6 +41,7 @@ body {
     line-height: 115px;
     margin: 0px 0px 0px 75px;
     font-family: 'Italiana', serif;
+    float: left;
 }
 
 .nav-right {
@@ -282,6 +283,10 @@ body {
         margin: 0px 0px 0px 0px;
         font-family: 'Italiana', serif;
         float: none;
+    }
+    #logo-center {
+        display: flex;
+        justify-content: center;
     }
     .nav-right {
         display: flex;

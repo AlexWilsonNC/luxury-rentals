@@ -14,7 +14,9 @@
 <body>
     <div id="container">
         <nav id="main-nav">
-            <a id="lux-txt" href="/">Luxury Rentals</a>
+            <div id="logo-center">
+                <a id="lux-txt" href="/">Luxury Rentals</a>
+            </div>
             <div class="nav-right top-nav">
                 <a href="/">Home</a>
                 <a href="/rentals">Rentals</a>
@@ -38,7 +40,8 @@
                     <option value="{{booking.id}}" id="location-selector">{{booking.city}}, {{booking.airport}}</option>
                 </select>
                 <select class="dropdown" name="dropdown">
-                    <option value="{{booking.cars.[0].id}}" id="vehicle-selector">{{booking.cars.[0].make}} {{booking.cars.[0].model}}</option>
+                    <option value="{{booking.cars.[0].id}}" id="vehicle-selector">{{booking.cars.[0].make}}
+                        {{booking.cars.[0].model}}</option>
                 </select>
 
                 <div class="calendar-container">
