@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Rentals | Book Now</title>
+    <link rel="stylesheet" href="../public/css/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+
+<body>
+    <div>
+        <nav id="main-nav">
+            <a id="lux-txt" href="/">Luxury Rentals</a>
+            <div class="nav-right top-nav">
+                <a href="/">Home</a>
+                <a href="/rentals">Rentals</a>
+                <a href="/contact">Contact</a>
+                {{#if logged_in}}
+                <a id="logout" href="">Logout</a>
+                {{else}}
+                <a href="/login">Login</a>
+                {{/if}}
+                <a href="/book-now"><button class="book-now-btn nav-btn">Book Now</button></a>
+            </div>
+        </nav>
+        <div id="container"></div>
+    </div>
+
+    <article id="no-rental-history">
+        <div id="main-box1">
+            <h1>You have not yet rented a vehicle with us!</h1>
+            <a href="/book-now"><button class="book-now-btn nav-btn no-rent-btn">Book Now</button></a>
+        </div>
+    </article>
+
+    <article id="rental-history">
+        <div id="main-box2">
+            <div class="prev-rental">
+                <div class="left">
+                    <h2>Past Rental:</h2>
+                    <div class="info">
+                        <p class="rantal-date">Oct 1 - Oct 4</p>
+                        <p class="car-name">Dodge Viper</p>
+                        <p class="location">New York</p>
+                        <p class="daily-price">$_ per Day</p>
+                        <p class="total-price">Total: $1000</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="img-right" src="../public/assets/inventory/dodge-viper-2016.jpg">
+                    <!-- <img id="img-right" src="{{booking.cars.[0].image}}"
+                        alt="{{booking.cars.[0].make}} {{booking.cars.[0].model}}"> -->
+                </div>
+            </div>
+            <div class="prev-rental">
+                <div class="left">
+                    <h2>Past Rental:</h2>
+                    <p id="rantal-date">Oct 1 - Oct 4</p>
+                    <p id="daily-price">$_ per Day</p>
+                    <p id="total-price">Total: $1000</p>
+                </div>
+                <div class="right">
+                    <img class="img-right" src="../public/assets/inventory/dodge-viper-2016.jpg">
+                    <!-- <img id="img-right" src="{{booking.cars.[0].image}}"
+                        alt="{{booking.cars.[0].make}} {{booking.cars.[0].model}}"> -->
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer id="bottom-footer">
+        <h6>Luxury Rentals*</h6>
+        <div class="nav-right bootom-nav">
+            <a href="/rentals">Rentals</a>
+            <a href="/contact">Contact</a>
+            {{#if logged_in}}
+            <a id="logout" href="">Logout</a>
+            {{else}}
+            <a href="/login">Login</a>
+            {{/if}}
+        </div>
+    </footer>
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>
