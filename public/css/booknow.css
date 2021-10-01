@@ -123,15 +123,22 @@ article {
     width: 50%;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     padding: 15px 0px 0px 25px;
+}
+
+#left p {
+    font-size: 26px;
+    font-weight: 300;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .dropdown,
 #numder-days {
     width: 250px;
     font-size: 20px;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 0px;
 }
 
 #right {

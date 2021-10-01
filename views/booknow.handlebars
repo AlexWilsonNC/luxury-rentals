@@ -36,6 +36,7 @@
     <article>
         <div id="main-box">
             <div id="left">
+                <p>Rental Location:</p>
                 <select class="dropdown" name="dropdown">
                     {{!-- <option value="{{booking.id}}" id="location-selector">{{booking.city}}, {{booking.airport}}</option> --}}
 
@@ -43,12 +44,16 @@
                     <option value="{{city.id}}" id="location-selector">{{city.city}}, {{city.airport}}</option>
                     {{/each}}
                 </select>
+                <p>Vehicle Selection:</p>
                 <select class="dropdown" name="dropdown">
                     {{!-- <option value="{{booking.cars.[0].id}}" id="vehicle-selector">{{booking.cars.[0].make}} {{booking.cars.[0].model}}</option> --}}
                     {{#each cars as |car|}}
                     <option value="{{car.id}}" id="vehicle-selector">{{car.make}} {{car.model}}</option>
                     {{/each}}
                 </select>
+                <p>Choose Pickup Date:</p>
+                <input type="text" id="numder-days" placeholder="How many days?">
+                <p>Choose Dropoff Date:</p>
                 <input type="text" id="numder-days" placeholder="How many days?">
             </div>
 
