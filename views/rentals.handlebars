@@ -24,8 +24,12 @@
                 <a id="highlight" href="/rentals">Rentals</a>
                 <a href="/contact">Contact</a>
                 {{#if logged_in}}
-                <a id="logout" href="">Logout</a>
-                {{else}}
+                <div class="dropdown">
+                    <a id="account" href="/account">Account ↓</a>
+                    <div class="dropdown-content">
+                        <a id="logout" href="">Logout</a>
+                    </div>
+                </div> {{else}}
                 <a href="/login">Login</a>
                 {{/if}}
                 <a href="/book-now"><button class="book-now-btn nav-btn">Book Now</button></a>

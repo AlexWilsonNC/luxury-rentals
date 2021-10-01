@@ -28,6 +28,9 @@ body {
     position: fixed;
     width: 100%;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #highlight {
@@ -37,7 +40,6 @@ body {
 #lux-txt {
     color: #fff;
     font-size: 58px;
-    line-height: 115px;
     margin: 0px 0px 0px 75px;
     font-family: 'Italiana', serif;
     float: left;
@@ -48,10 +50,6 @@ body {
     color: white;
     margin-right: 60px;
     font-size: 20px;
-}
-
-.top-nav {
-    line-height: 115px;
 }
 
 .nav-right a {
