@@ -24,7 +24,6 @@ body {
     height: 115px;
     background-image: url(../assets/black-bg.jpg);
     color: #fff;
-    position: fixed;
     width: 100%;
     z-index: 100;
     display: flex;
@@ -331,17 +330,20 @@ body {
     #callnow {
         height: 60vh;
     }
+    .nav-right {
+        margin-right: 20px;
+    }
     .nav-right a {
         margin-right: 20px;
+    }
+    #advert {
+        top: 250px;
     }
 }
 
 @media screen and (max-width: 1278px) {
-    .nav-right {
+    .nav-right a {
         margin-right: 10px;
-    }
-    #advert {
-        top: 250px;
     }
     #container {
         height: 75vh;
@@ -390,16 +392,15 @@ body {
 
 @media screen and (max-width: 1025px) {
     #container {
-        margin-top: 100px;
         height: 60vh;
     }
     #main-nav {
-        height: 175px;
-        top: 0;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
     }
     #logo-center {
-        display: flex;
-        justify-content: center;
+        margin-top: 5px;
     }
     #lux-txt {
         font-size: 38px;
@@ -411,15 +412,19 @@ body {
         display: flex;
         justify-content: space-around;
         float: none;
-        margin-right: 0px;    
+        margin: 0px 0px 20px 0px;    
+    }
+    .nav-right a {
+        margin-right: 20px;
     }
     #advert {
         font-size: 16px;
-        top: 150px;
+        top: 100px;
         left: 40px;
     }
     .book-now-btn {
-        padding: 7px 15px 7px 15px;
+        padding: 6px 12px 6px 12px;
+        font-size: 16px;
     }
     #about {
         margin: 25px 25px 25px 25px;
@@ -480,28 +485,28 @@ body {
     #callnow h5 {
         font-size: 26px;
     }
+    #advert {
+        top: 75px;
+    }
+    #container {
+        height: 50vh;
+    }
+    #container img {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 720px) {
-    #lux-text {
-        /* push down a little? */
-    }
     #advert {
         display: none;
     }
     .advert-btn {
         display: none;
     }
-    .book-now-btn {
-        padding: 6px 12px 6px 12px;
-        font-size: 16px;
-    }
     #container {
-        margin-top: 150px;
         height: 40vh;
     }
     #about {
-        width: 500px;
         margin: 25px auto;
         justify-content: center;
     }
@@ -535,12 +540,47 @@ body {
     #callnow h5 {
         font-size: 38px;
     }
+    #h6 {
+        left: 25px;
+    }
 }
 
 @media screen and (max-width: 560px) {
-    /* Collapse nav into hamburger */
-    /* adjust main pic*/
-    #container {
-        margin-top: 150px;
+    .nav-right a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .book-now-btn {
+        padding: 4px 8px 4px 8px;
+        font-size: 12px;
+    }
+    .dropdown {
+        margin-top: -5.1px;
+    }
+    #about {
+        margin: 0px 0px 10px 0px;
+    }
+    #about-img {
+        width: 250px;
+    }
+    #about-txt {
+        width: 400px;
+    }
+    #callnow {
+        height: 20vh;
+        margin-top: 25px;
+    }
+    .callnow-content {
+        margin: 10px;
+    }
+    #callnow h4 {
+        margin-top: 4px;
+        font-size: 20px;
+    }
+    #callnow p {
+        display: none;
+    }
+    #callnow h5 {
+        font-size: 18px;
     }
 }

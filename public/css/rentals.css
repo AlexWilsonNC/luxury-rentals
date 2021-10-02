@@ -475,12 +475,24 @@ iframe {
    #locations {
        width: 100%;
    }
+   iframe {
+       width: 400px;
+       height: 400px;
+   }
 }
 
 @media screen and (max-width: 560px) {
     /* Collapse nav into hamburger */
     /* adjust main pic*/
     #container {
-        margin-top: 150px;
+        margin-top: 50px;
+    }
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+    #main-box {
+        width: 425px;
+        height: 210px;
     }
 }
