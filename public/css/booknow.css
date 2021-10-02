@@ -56,6 +56,10 @@ body {
     margin-left: 15px;
 }
 
+.down-icon3 {
+    font-size: 16px;
+}
+
 .dropdown-content a:hover {
     color: red;
 }

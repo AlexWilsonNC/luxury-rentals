@@ -82,6 +82,10 @@ body {
     margin-left: 15px;
 }
 
+.down-icon3 {
+    font-size: 16px;
+}
+
 .dropdown-content a:hover {
     color: red;
 }
@@ -299,7 +303,6 @@ body {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 #h6 {
@@ -582,5 +585,8 @@ body {
     }
     #callnow h5 {
         font-size: 18px;
+    }
+    .down-icon3 {
+        font-size: 9px;
     }
 }

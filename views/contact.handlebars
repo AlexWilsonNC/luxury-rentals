@@ -23,7 +23,7 @@
                 <a id="highlight" href="/contact">Contact</a>
                 {{#if logged_in}}
                 <div class="dropdown">
-                    <a id="account" href="/account">Account ↓</a>
+                    <a id="account" href="/account">Account <span class="down-icon3"><i class="fas fa-chevron-down"></i></span></a>
                     <div class="dropdown-content">
                         <a class="logout" href="">Logout</a>
                     </div>
@@ -84,4 +84,5 @@
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </body>
