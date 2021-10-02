@@ -379,6 +379,9 @@ body {
     #container {
         height: 20vh;
     }
+    #h6 {
+        left: 25px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -392,5 +395,18 @@ body {
 }
 
 @media screen and (max-width: 560px) {
-    
+    .nav-right a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .book-now-btn {
+        padding: 4px 8px 4px 8px;
+        font-size: 12px;
+    }
+    .dropdown {
+        margin-top: -5.1px;
+    }
+    .down-icon3 {
+        font-size: 9px;
+    }
 }

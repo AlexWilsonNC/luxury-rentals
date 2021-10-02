@@ -331,6 +331,12 @@ iframe {
         height: 85vh;
         min-height: 325vh;
     }
+    .nav-right {
+        margin-right: 20px;
+    }
+    .nav-right a {
+        margin-right: 20px;
+    }
     #all-cars {
         justify-content: space-around;
     }
@@ -347,6 +353,9 @@ iframe {
 @media screen and (max-width: 1278px) {
     #container {
         min-height: 305vh;
+    }
+    #main-nav {
+        height: 125px;
     }
     .nav-right {
         margin-right: 10px;
@@ -381,6 +390,32 @@ iframe {
     #container {
         min-height: 465vh;
     }
+    #main-nav {
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+    }
+    #lux-txt {
+        font-size: 38px;
+        line-height: 65px;
+        margin: 0px 0px 0px 0px;
+        float: none;
+    }
+    #logo-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .nav-right {
+        display: flex;
+        justify-content: space-around;
+        float: none;
+        margin-right: 0px;    
+    }
+    .book-now-btn {
+        padding: 6px 12px 6px 12px;
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 1125px) {
     #container {
@@ -388,26 +423,6 @@ iframe {
     }
     #header {
         height: 30vh;
-    }
-    #main-nav {
-        height: 175px;
-    }
-    #lux-txt {
-        font-size: 38px;
-        line-height: 65px;
-        margin: 0px 0px 0px 0px;
-        font-family: 'Italiana', serif;
-        float: none;
-    }
-    #logo-center {
-        display: flex;
-        justify-content: center;
-    }
-    .nav-right {
-        display: flex;
-        justify-content: space-around;
-        float: none;
-        margin-right: 0px;    
     }
     #featured-car {
         display: none;
@@ -421,6 +436,29 @@ iframe {
 }
 
 @media screen and (max-width: 1020px) {
+    #main-nav {
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+    }
+    #logo-center {
+        margin-top: 5px;
+    }
+    #lux-txt {
+        font-size: 38px;
+        line-height: 65px;
+        margin: 0px 0px 0px 0px;
+        float: none;
+    }
+    .nav-right {
+        display: flex;
+        justify-content: space-around;
+        float: none;
+        margin: 0px 0px 20px 0px;    
+    }
+    .nav-right a {
+        margin-right: 20px;
+    }
     #container {
         min-height: 205vh;
     }
@@ -482,11 +520,12 @@ iframe {
        width: 400px;
        height: 400px;
    }
+   #h6 {
+    left: 25px;
+}
 }
 
 @media screen and (max-width: 560px) {
-    /* Collapse nav into hamburger */
-    /* adjust main pic*/
     #container {
         margin-top: 50px;
     }
@@ -497,5 +536,19 @@ iframe {
     #main-box {
         width: 425px;
         height: 210px;
+    }
+    .nav-right a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .book-now-btn {
+        padding: 4px 8px 4px 8px;
+        font-size: 12px;
+    }
+    .dropdown {
+        margin-top: -5.1px;
+    }
+    .down-icon3 {
+        font-size: 9px;
     }
 }

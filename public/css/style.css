@@ -560,6 +560,9 @@ body {
     .dropdown {
         margin-top: -5.1px;
     }
+    .down-icon3 {
+        font-size: 9px;
+    }
     #about {
         margin: 0px 0px 10px 0px;
     }
@@ -585,8 +588,5 @@ body {
     }
     #callnow h5 {
         font-size: 18px;
-    }
-    .down-icon3 {
-        font-size: 9px;
     }
 }
