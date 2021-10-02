@@ -310,12 +310,13 @@ iframe {
     width: 100%;
 }
 
-#bottom-footer h6 {
+#h6 {
     line-height: 75px;
     font-size: 28px;
     font-family: 'Italiana', serif;
     position: relative;
     left: 50px;
+    color: #fff;
 }
 
 .bootom-nav {

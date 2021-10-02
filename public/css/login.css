@@ -173,12 +173,13 @@ article {
     flex-wrap: wrap;
 }
 
-#bottom-footer h2 {
+#h6 {
     line-height: 75px;
     font-size: 28px;
     font-family: 'Italiana', serif;
     position: relative;
     left: 50px;
+    color: #fff;
 }
 
 .bootom-nav {
