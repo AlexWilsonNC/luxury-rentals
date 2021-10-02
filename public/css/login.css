@@ -170,7 +170,6 @@ article {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 #h6 {
@@ -194,16 +193,24 @@ article {
     article {
         min-height: 50vh;
     }
-}
-
-@media screen and (max-width: 1278px) {
     .nav-right {
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .nav-right a {
         margin-right: 20px;
     }
-    
+}
+
+@media screen and (max-width: 1278px) {
+    #main-nav {
+        height: 125px;
+    }
+    .nav-right {
+        margin-right: 10px;
+    }
+    .nav-right a {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 1025px) {

@@ -26,15 +26,7 @@ body {
     justify-content: space-between;
 }
 
-#lux-txt {
-    color: #fff;
-    font-size: 58px;
-    margin: 0px 0px 0px 75px;
-    font-family: 'Italiana', serif;
-    float: left;
-}
-
-.dropdown {
+.account-dropdown {
     position: relative;
     display: inline-block;
 }
@@ -67,6 +59,14 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
     height: 60px;
+}
+
+#lux-txt {
+    color: #fff;
+    font-size: 58px;
+    margin: 0px 0px 0px 75px;
+    font-family: 'Italiana', serif;
+    float: left;
 }
 
 .nav-right {
@@ -230,7 +230,6 @@ article {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -250,39 +249,53 @@ article {
 }
 
 @media screen and (max-width: 1400px) {
-    
-}
-
-@media screen and (max-width: 1278px) {
     .nav-right {
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .nav-right a {
         margin-right: 20px;
     }
 }
 
+@media screen and (max-width: 1278px) {
+    #main-nav {
+        height: 125px;
+    }
+    .nav-right {
+        margin-right: 10px;
+    }
+    .nav-right a {
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width: 1025px) {
     #main-nav {
-        height: 175px;
-        top: 0;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
     }
     #logo-center {
-        display: flex;
-        justify-content: center;
+        margin-top: 5px;
     }
     #lux-txt {
         font-size: 38px;
         line-height: 65px;
         margin: 0px 0px 0px 0px;
-        font-family: 'Italiana', serif;
         float: none;
     }
     .nav-right {
         display: flex;
         justify-content: space-around;
         float: none;
-        margin-right: 0px;    
+        margin: 0px 0px 20px 0px;    
+    }
+    .nav-right a {
+        margin-right: 20px;
+    }
+    .book-now-btn {
+        padding: 6px 12px 6px 12px;
+        font-size: 16px;
     }
     #main-box {
         height: 60vh;
@@ -309,7 +322,7 @@ article {
         padding: 4px 8px 4px 8px;
         font-size: 12px;
     }
-    .dropdown {
+    .account-dropdown {
         margin-top: -5.1px;
     }
     .down-icon3 {
