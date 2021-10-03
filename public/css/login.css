@@ -170,15 +170,15 @@ article {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-#bottom-footer h2 {
+#h6 {
     line-height: 75px;
     font-size: 28px;
     font-family: 'Italiana', serif;
     position: relative;
     left: 50px;
+    color: #fff;
 }
 
 .bootom-nav {
@@ -193,16 +193,24 @@ article {
     article {
         min-height: 50vh;
     }
-}
-
-@media screen and (max-width: 1278px) {
     .nav-right {
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .nav-right a {
         margin-right: 20px;
     }
-    
+}
+
+@media screen and (max-width: 1278px) {
+    #main-nav {
+        height: 125px;
+    }
+    .nav-right {
+        margin-right: 10px;
+    }
+    .nav-right a {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 1025px) {
@@ -254,6 +262,9 @@ article {
         padding: 6px 12px 6px 12px;
         font-size: 16px;
     }
+    #h6 {
+        left: 25px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -261,5 +272,15 @@ article {
 }
 
 @media screen and (max-width: 560px) {
-    
+    .nav-right a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .book-now-btn {
+        padding: 4px 8px 4px 8px;
+        font-size: 12px;
+    }
+    .down-icon3 {
+        font-size: 9px;
+    }
 }

@@ -14,4 +14,6 @@ Luxury Rentals is a car rental site built collectively as a group project.
 [Link to Github Repository](https://github.com/AlexWilsonNC/luxury-rentals)
 
 ## Screenshot
-![screenshot](./public/assets/luxrent-ss.png)
+![screenshot](/public/assets/luxury-rentals1.png)
+
+![screenshot](/public/assets/luxury-rentals2.png)

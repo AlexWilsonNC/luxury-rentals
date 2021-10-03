@@ -89,6 +89,10 @@ body {
     margin-left: 15px;
 }
 
+.down-icon3 {
+    font-size: 16px;
+}
+
 .dropdown-content a:hover {
     color: red;
 }
@@ -262,15 +266,15 @@ body {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-#bottom-footer h6 {
+#h6 {
     line-height: 75px;
     font-size: 28px;
     font-family: 'Italiana', serif;
     position: relative;
     left: 50px;
+    color: #fff;
 }
 
 .bootom-nav {
@@ -282,14 +286,23 @@ body {
         width: 100%;
         margin: 0px auto;
     }
+    .nav-right {
+        margin-right: 20px;
+    }
+    .nav-right a {
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 1278px) {
+    #main-nav {
+        height: 125px;
+    }
     .nav-right {
         margin-right: 10px;
     }
     .nav-right a {
-        margin-right: 20px;
+        margin-right: 10px;
     }
     #locations {
         width: 100%;
@@ -307,25 +320,27 @@ body {
 
 @media screen and (max-width: 1025px) {
     #main-nav {
-        height: 175px;
-        top: 0;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+    }
+    #logo-center {
+        margin-top: 5px;
     }
     #lux-txt {
         font-size: 38px;
         line-height: 65px;
         margin: 0px 0px 0px 0px;
-        font-family: 'Italiana', serif;
         float: none;
-    }
-    #logo-center {
-        display: flex;
-        justify-content: center;
     }
     .nav-right {
         display: flex;
         justify-content: space-around;
         float: none;
-        margin-right: 0px;    
+        margin: 0px 0px 20px 0px;    
+    }
+    .nav-right a {
+        margin-right: 20px;
     }
     .book-now-btn {
         padding: 7px 15px 7px 15px;
@@ -374,6 +389,9 @@ body {
     #container {
         height: 20vh;
     }
+    #h6 {
+        left: 25px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -387,5 +405,18 @@ body {
 }
 
 @media screen and (max-width: 560px) {
-    
+    .nav-right a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .book-now-btn {
+        padding: 4px 8px 4px 8px;
+        font-size: 12px;
+    }
+    .dropdown {
+        margin-top: -5.1px;
+    }
+    .down-icon3 {
+        font-size: 9px;
+    }
 }
