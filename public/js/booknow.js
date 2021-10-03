@@ -3,8 +3,8 @@ const confirmBtnEl = document.querySelector('.confirm-btn');
 const bookNowFormHandler = async (event) => {
     event.preventDefault();
   
-    const location_id = document.querySelector('#location-selector').value.trim();
-    const car_id = document.querySelector('#vehicle-selector').value.trim();
+    const location_id = document.querySelector('#location-selector').value;
+    const car_id = document.querySelector('#vehicle-selector').value;
     const start_date = new Date();
     const end_date = new Date(2021, 9, 6);
   
