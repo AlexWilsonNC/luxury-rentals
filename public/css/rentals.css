@@ -290,7 +290,6 @@ iframe {
 
 .card:hover {
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.8);
-    /* add a layer over the image with cool text? */
     filter: brightness(68%);
 }
 
@@ -307,10 +306,10 @@ iframe {
 .card h1 {
     padding-left: 15px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     color: black;
-    text-shadow: 2px 2px rgba(160, 0, 0, 0.493);
+    text-shadow: 1.5px 1.5px rgba(160, 0, 0, 0.493);
 }
 
 .name-year {
