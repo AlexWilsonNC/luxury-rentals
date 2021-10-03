@@ -321,6 +321,7 @@ iframe {
 .card h1 {
     padding-left: 15px;
     font-family: 'Antonio', sans-serif;
+    color: black;
 }
 
 .name-year {
@@ -328,6 +329,7 @@ iframe {
     padding: 15px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
+    color: black;
 }
 
 .name-year button {
