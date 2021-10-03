@@ -1,17 +1,3 @@
-// function calculateTotal() {
-//     const daysEntered = document.getElementById('numder-days').value;
-//     const total = 0; 
-//     for (let i = 1; i < total.length; i++) {
-//         const carPrice = document.getElementById('_');
-//         // Where is carPrice coming from?
-//         total += parseInt(carPrice.value) * parseInt(daysEntered);
-//     }
-// }
-
-// document.getElementById('total-purchase').innerHTML = 'Rental Total $' + total;
-
-
-
 const confirmBtnEl = document.querySelector('.confirm-btn');
 
 const bookNowFormHandler = async (event) => {
@@ -20,7 +6,7 @@ const bookNowFormHandler = async (event) => {
     const location_id = document.querySelector('#location-selector').value.trim();
     const car_id = document.querySelector('#vehicle-selector').value.trim();
     const start_date = new Date();
-    const end_date = new Date(2021, 9, 2);
+    const end_date = new Date(2021, 9, 6);
   
     console.log(location_id, car_id, start_date, end_date);
     if (location_id && car_id && start_date && end_date) {
