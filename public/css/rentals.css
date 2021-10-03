@@ -255,9 +255,57 @@ iframe {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.9);
 }
 
+.image {
+    position: relative;
+    width: 450px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+/* .card:hover > .image-overlay {
+    opacity: 1;
+} */
+
+.image-overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overlay-text {
+    font-size: 52px;
+}
+
+.hide-logo {
+    display: none;
+    position: relative;
+    top: 150px;
+}
+
 .card:hover {
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.8);
     /* add a layer over the image with cool text? */
+    filter: brightness(85%);
+}
+
+.card:hover > img {
+    filter: brightness(80%);
+}
+
+.card:hover > .hide-logo:hover {
+    display: block;
 }
 
 .card img {
@@ -268,10 +316,6 @@ iframe {
     border-top-right-radius: 5px;
     border-bottom: 1px solid black;
     cursor: pointer;
-}
-
-.card img:hover {
-    filter: brightness(70%);
 }
 
 .card h1 {

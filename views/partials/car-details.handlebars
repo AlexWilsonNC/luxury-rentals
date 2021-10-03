@@ -1,9 +1,17 @@
 <li class="card">
-    <img src="{{image}}" alt="{{make}} {{model}}">
-    <h1>{{make}} {{model}}</h1>
-    <div class="name-year">
-        <p>{{year}}</p>
-        <p>${{price}}/day</p>
-        <button id="car-{{id}}" class="book-btn">Rent</button>
-    </div>
+    {{!-- <a href="car-{{id}}" id="car-{{id}}"> --}}
+        <div class="image">
+            <img src="{{image}}" alt="{{make}} {{model}}">
+            <div class="image-overlay">
+                <div class="overlay-text">{{make}}</div>
+            </div>
+        </div>
+        <h1>{{make}} {{model}}</h1>
+        <div class="name-year">
+            <p>{{year}}</p>
+            <p>${{price}}/day</p>
+            <button id="car-{{id}}" class="book-btn">Rent</button>
+        </div>
+        {{!--
+    </a> --}}
 </li>
