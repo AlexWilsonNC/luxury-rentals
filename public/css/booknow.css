@@ -124,6 +124,10 @@ body {
     -webkit-transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
 }
 
+.hidden {
+    display: none;
+}
+
 #logout {
     text-align: center;
     font-size: 20px;
