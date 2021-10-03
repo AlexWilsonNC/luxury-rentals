@@ -41,17 +41,17 @@
         <div id="main-box">
             <div id="left">
                 <p>Rental Location:</p>
-                <select class="dropdown" name="dropdown">
+                <select id="location-selector" class="dropdown" name="dropdown">
                     <option disabled selected value> -- Select a Location -- </option>
                     {{#each cities as |city|}}
-                    <option value="{{city.id}}" id="location-selector">{{city.city}}, {{city.airport}}</option>
+                    <option value="{{city.id}}">{{city.city}}, {{city.airport}}</option>
                     {{/each}}
                 </select>
                 <p>Vehicle Selection:</p>
-                <select class="dropdown" name="dropdown">
+                <select id="vehicle-selector" class="dropdown" name="dropdown">
                     <option disabled selected value> -- Select a Car -- </option>
                     {{#each cars as |car|}}
-                    <option value="{{car.id}}" id="vehicle-selector">{{car.make}} {{car.model}}</option>
+                    <option value="{{car.id}}">{{car.make}} {{car.model}}</option>
                     {{/each}}
                 </select>
                 <p>Choose Pickup Date:</p>
