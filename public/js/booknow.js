@@ -1,12 +1,14 @@
 const confirmBtnEl = document.querySelector('.confirm-btn');
 const locationSelector = document.querySelector('#location-selector');
 const carSelector = document.querySelector('#vehicle-selector');
+const imgEl = document.querySelector('#img-right');
+const priceEl = document.querySelector('#price-generator');
+const totalEl = document.querySelector('#total-purchase');
 
 const defaultSelector = () => {
   const city = window.location.pathname.split('/')[2];
   const car = window.location.pathname.split('/')[3];
 
-  console.log(city, car);
   for (let i, j = 0; i = locationSelector.options[j]; j++) {
     if (i.value == city) {
       locationSelector.selectedIndex = j;
@@ -62,6 +64,55 @@ const selectCityHandler = () => {
 
 };
 
+const selectCarHandler = () => {
+  const carId = carSelector.value;
+  if (carId === '0') {
+    imgEl.removeAttribute('src');
+    imgEl.removeAttribute('alt');
+
+    priceEl.textContent = '';
+    totalEl.textContent = '';
+
+    for (let i = 1; i < locationSelector.options.length; i++) {
+      let selected = document.querySelector(`#city-${locationSelector.options[i].value}`);
+      selected.classList.remove('hidden');;
+    };
+    return;
+  };
+
+  fetch(`/api/car/${carId}`)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+
+      imgEl.setAttribute('src', data.image);
+      imgEl.setAttribute('alt', data.make + ' ' + data.model);
+
+      priceEl.textContent = `\$${data.price.toLocaleString('en-US')} per Day`;
+      totalEl.textContent = `Total: \$${data.price.toLocaleString('en-US')} for 1 Day(s)`;
+
+      let availability = [];
+      for (let i = 0; i < data.locations.length; i++) {
+        availability.push(data.locations[i].id);
+      };
+
+      for (let j = 1; j < locationSelector.options.length; j++) {
+        let selected = document.querySelector(`#city-${locationSelector.options[j].value}`);
+        if (!availability.includes(parseInt(locationSelector.options[j].value))) {
+          selected.classList.add('hidden');
+        } else {
+          selected.classList.remove('hidden');
+        }
+      };
+
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+
+};
+
 const bookNowFormHandler = async (event) => {
   event.preventDefault();
 
@@ -88,5 +139,7 @@ const bookNowFormHandler = async (event) => {
 
 defaultSelector();
 selectCityHandler();
-confirmBtnEl.addEventListener('click', bookNowFormHandler);
+selectCarHandler();
 locationSelector.addEventListener('change', selectCityHandler);
+carSelector.addEventListener('change', selectCarHandler);
+confirmBtnEl.addEventListener('click', bookNowFormHandler);
