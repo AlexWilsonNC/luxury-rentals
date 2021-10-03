@@ -275,10 +275,6 @@ iframe {
     transition: opacity 0.25s;
 }
 
-/* .card:hover > .image-overlay {
-    opacity: 1;
-} */
-
 .image-overlay:hover {
     opacity: 1;
     cursor: pointer;
@@ -290,22 +286,12 @@ iframe {
 
 .hide-logo {
     display: none;
-    position: relative;
-    top: 150px;
 }
 
 .card:hover {
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.8);
     /* add a layer over the image with cool text? */
-    filter: brightness(85%);
-}
-
-.card:hover > img {
-    filter: brightness(80%);
-}
-
-.card:hover > .hide-logo:hover {
-    display: block;
+    filter: brightness(68%);
 }
 
 .card img {
@@ -320,33 +306,19 @@ iframe {
 
 .card h1 {
     padding-left: 15px;
-    font-family: 'Antonio', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
     color: black;
+    text-shadow: 2px 2px rgba(160, 0, 0, 0.493);
 }
 
 .name-year {
-    font-size: 32px;
+    font-size: 34px;
     padding: 15px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
     color: black;
-}
-
-.name-year button {
-    font-size: 26px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 5px 20px 5px 20px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.name-year button:hover {
-    cursor: pointer;
-    background-color: rgb(197, 15, 15);
-    color: #fff;
-    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.8);
 }
 
 #bottom-footer {
