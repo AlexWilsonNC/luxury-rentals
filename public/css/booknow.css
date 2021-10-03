@@ -26,15 +26,7 @@ body {
     justify-content: space-between;
 }
 
-#lux-txt {
-    color: #fff;
-    font-size: 58px;
-    margin: 0px 0px 0px 75px;
-    font-family: 'Italiana', serif;
-    float: left;
-}
-
-.dropdown {
+.account-dropdown {
     position: relative;
     display: inline-block;
 }
@@ -56,6 +48,10 @@ body {
     margin-left: 15px;
 }
 
+.down-icon3 {
+    font-size: 16px;
+}
+
 .dropdown-content a:hover {
     color: red;
 }
@@ -63,6 +59,14 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
     height: 60px;
+}
+
+#lux-txt {
+    color: #fff;
+    font-size: 58px;
+    margin: 0px 0px 0px 75px;
+    font-family: 'Italiana', serif;
+    float: left;
 }
 
 .nav-right {
@@ -230,18 +234,18 @@ article {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-#bottom-footer h6 {
+#h6 {
     line-height: 75px;
     font-size: 28px;
     font-family: 'Italiana', serif;
     position: relative;
     left: 50px;
+    color: #fff;
 }
 
 .bootom-nav {
@@ -249,39 +253,53 @@ article {
 }
 
 @media screen and (max-width: 1400px) {
-    
-}
-
-@media screen and (max-width: 1278px) {
     .nav-right {
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .nav-right a {
         margin-right: 20px;
     }
 }
 
+@media screen and (max-width: 1278px) {
+    #main-nav {
+        height: 125px;
+    }
+    .nav-right {
+        margin-right: 10px;
+    }
+    .nav-right a {
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width: 1025px) {
     #main-nav {
-        height: 175px;
-        top: 0;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
     }
     #logo-center {
-        display: flex;
-        justify-content: center;
+        margin-top: 5px;
     }
     #lux-txt {
         font-size: 38px;
         line-height: 65px;
         margin: 0px 0px 0px 0px;
-        font-family: 'Italiana', serif;
         float: none;
     }
     .nav-right {
         display: flex;
         justify-content: space-around;
         float: none;
-        margin-right: 0px;    
+        margin: 0px 0px 20px 0px;    
+    }
+    .nav-right a {
+        margin-right: 20px;
+    }
+    .book-now-btn {
+        padding: 6px 12px 6px 12px;
+        font-size: 16px;
     }
     #main-box {
         height: 60vh;
@@ -294,11 +312,24 @@ article {
 }
 
 @media screen and (max-width: 720px) {
-    #lux-text {
-        /* push down a little? */
+    #h6 {
+        left: 25px;
     }
 }
 
 @media screen and (max-width: 560px) {
-    
+    .nav-right a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .book-now-btn {
+        padding: 4px 8px 4px 8px;
+        font-size: 12px;
+    }
+    .account-dropdown {
+        margin-top: -5.1px;
+    }
+    .down-icon3 {
+        font-size: 9px;
+    }
 }

@@ -144,6 +144,102 @@ const carData = [
         "price": "900",
         "color": "White",
         "image": "/assets/inventory/lamborghini-huracan-2015.jpg"
+    },
+    {
+        "year": "2020",
+        "make": "Audi",
+        "model": "R8",
+        "price": "1000",
+        "color": "Red",
+        "image": "/assets/extra-inventory/audi-r8-2020-red.jpg"
+    },
+    {
+        "year": "2015",
+        "make": "BMW",
+        "model": "i8",
+        "price": "600",
+        "color": "Gray",
+        "image": "/assets/extra-inventory/bmw-i8-2015-gray.jpg"
+    },
+    {
+        "year": "2016",
+        "make": "Dodge",
+        "model": "Challenger",
+        "price": "250",
+        "color": "Purple",
+        "image": "/assets/extra-inventory/dodge-challenger-2016-purple.jpg"
+    },
+    {
+        "year": "2019",
+        "make": "Ford",
+        "model": "GT",
+        "price": "2000",
+        "color": "Black",
+        "image": "/assets/extra-inventory/ford-gt-2019-black.jpg"
+    },
+    {
+        "year": "2015",
+        "make": "Ford",
+        "model": "Mustang",
+        "price": "250",
+        "color": "Yellow",
+        "image": "/assets/extra-inventory/ford-mustang-2015-yellow.jpg"
+    },
+    {
+        "year": "2009",
+        "make": "Hummer",
+        "model": "H2",
+        "price": "400",
+        "color": "Orange",
+        "image": "/assets/extra-inventory/hummer-h2-2009-orange.jpg"
+    },
+    {
+        "year": "2018",
+        "make": "Lamborghini",
+        "model": "Aventador",
+        "price": "2600",
+        "color": "Pink",
+        "image": "/assets/extra-inventory/lamborghini-aventador-2018-pink.jpg"
+    },
+    {
+        "year": "2018",
+        "make": "Lexus",
+        "model": "LFA",
+        "price": "300",
+        "color": "Yellow",
+        "image": "/assets/extra-inventory/lexus-lfa-2018-orange.jpg"
+    },
+    {
+        "year": "2020",
+        "make": "McLaren",
+        "model": "Spider",
+        "price": "2100",
+        "color": "Blue",
+        "image": "/assets/extra-inventory/mclaren-spider-2020-blue.jpg"
+    },
+    {
+        "year": "2020",
+        "make": "Mercedes",
+        "model": "GT",
+        "price": "1245",
+        "color": "Orange",
+        "image": "/assets/extra-inventory/mercedes-gt-2020-orange.jpg"
+    },
+    {
+        "year": "2021",
+        "make": "Nissan",
+        "model": "GTR",
+        "price": "450",
+        "color": "White",
+        "image": "/assets/extra-inventory/2021-nissan-gtr.jpg"
+    },
+    {
+        "year": "2020",
+        "make": "Aston Martin",
+        "model": "Superleggera",
+        "price": "2000",
+        "color": "Green",
+        "image": "/assets/extra-inventory/aston-superleggera-2020.jpg"
     }
 ];
 
