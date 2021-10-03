@@ -1,0 +1,19 @@
+<div class="prev-rental">
+    <div class="left">
+        <h2>Past Rental:</h2>
+        <div class="info">
+            <div class="info-left">
+                <p class="rantal-date">{{format_date start_date}} - {{format_date end_date}}</p>
+                <p class="daily-price">${{car.price}} per Day</p>
+                <p class="total-price">Total: ${{car.price}}</p>
+            </div>
+            <div class="info-right">
+                <p class="car-name">{{car.year}} {{car.make}} {{car.model}}</p>
+                <p class="location">{{location.city}}, {{location.airport}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img class="img-right" src="{{car.image}}" alt="{{car.make}} {{car.model}}">
+    </div>
+</div>

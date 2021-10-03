@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Car, Location, User } = require('../models');
+const { Car, Location, User, Reservation } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
@@ -62,9 +62,41 @@ router.get('/contact', (req, res) => {
   }
 });
 
-router.get('/account', (req, res) => {
+router.get('/account', withAuth, async (req, res) => {
   try {
-    res.render('account', { logged_in: req.session.logged_in });
+
+    const historyData = await Reservation.findAll({
+      where: { user_id: req.session.user_id },
+      include: [
+        {
+          model: Car,
+          attributes: [
+            'id',
+            'year',
+            'make',
+            'model',
+            'price',
+            'color',
+            'image'
+          ],
+        },
+        {
+          model: Location,
+          attributes: [
+            'id',
+            'city',
+            'airport',
+            'embed'
+          ],
+        },
+      ]
+    });
+    const reservations = historyData.map((reservation) =>
+      reservation.get({ plain: true })
+    );
+    console.log(reservations);
+
+    res.render('account', { reservations, logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

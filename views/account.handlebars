@@ -36,41 +36,23 @@
         <div id="container"></div>
     </div>
 
+    {{#if reservations}}
+    <article id="rental-history">
+        <div id="main-box2">
+            {{#each reservations as |reservation|}}
+            {{> history-details}}
+            {{/each}}
+        </div>
+    </article>
+    {{else}}
     <article id="no-rental-history">
         <div id="main-box1">
             <h1>You have not yet rented a vehicle with us!</h1>
             <a href="/book-now"><button class="book-now-btn nav-btn no-rent-btn">Book Now</button></a>
         </div>
     </article>
+    {{/if}}
 
-    <article id="rental-history">
-        <div id="main-box2">
-            <div class="prev-rental">
-                <div class="left">
-                    <h2>Past Rental:</h2>
-                    <div class="info">
-                        <div class="info-left">
-                            <p class="rantal-date">Oct 1 - Oct 4</p>
-                            <p class="daily-price">$_ per Day</p>
-                            <p class="total-price">Total: $1000</p>
-                        </div>
-                        <div class="info-right">
-                            <p class="car-name">Dodge Viper</p>
-                            <p class="location">New York</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <img class="img-right" src="../public/assets/inventory/dodge-viper-2016.jpg">
-                    <!-- <img id="img-right" src="{{booking.cars.[0].image}}"
-                        alt="{{booking.cars.[0].make}} {{booking.cars.[0].model}}"> -->
-                </div>
-            </div>
-
-            <!-- Additional rentals are added -->
-
-        </div>
-    </article>
 
     <footer id="bottom-footer">
         <h6>Luxury Rentals*</h6>
