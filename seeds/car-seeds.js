@@ -71,7 +71,8 @@ const carData = [
         "model": "Camaro",
         "price": "500",
         "color": "Yellow",
-        "image": "/assets/inventory/chevrolet-camaro-bumblebee-2018.jpg"
+        "image": "/assets/inventory/chevrolet-camaro-bumblebee-2018.jpg",
+        "overlay": "/assets/chevy-logo1.jpg"
     },
     {
         "year": "2020",
