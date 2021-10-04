@@ -4,6 +4,8 @@ const carSelector = document.querySelector('#vehicle-selector');
 const imgEl = document.querySelector('#img-right');
 const priceEl = document.querySelector('#price-generator');
 const totalEl = document.querySelector('#total-purchase');
+const startDateEl = document.querySelector('#start-date');
+const endDateEl = document.querySelector('#end-date');
 
 const defaultSelector = () => {
   const city = window.location.pathname.split('/')[2];
@@ -20,6 +22,20 @@ const defaultSelector = () => {
       carSelector.selectedIndex = j;
       break;
     };
+  };
+};
+
+const dateChangeHandler = () => {
+  if (startDateEl.value && endDateEl.value) {
+    const dates = rangepicker.getDates();
+    const rentalPeriod = getRentalPeriod(dates[0], dates[1]);
+
+    const price = priceEl.getAttribute('value');
+    if (price) {
+      const totalPrice = price * rentalPeriod;
+      totalEl.setAttribute('value', totalPrice);
+      totalEl.textContent = `Total: \$${totalPrice.toLocaleString('en-US')} for ${rentalPeriod} Day(s)`;
+    }
   };
 };
 
@@ -70,6 +86,9 @@ const selectCarHandler = () => {
     imgEl.removeAttribute('src');
     imgEl.removeAttribute('alt');
 
+    priceEl.removeAttribute('value');
+    totalEl.removeAttribute('value');
+
     priceEl.textContent = '';
     totalEl.textContent = '';
 
@@ -89,8 +108,17 @@ const selectCarHandler = () => {
       imgEl.setAttribute('src', data.image);
       imgEl.setAttribute('alt', data.make + ' ' + data.model);
 
+      let rentalPeriod = 1;
+      const dates = rangepicker.getDates();
+      if (dates[0] && dates[1]) {
+        rentalPeriod = getRentalPeriod(dates[0], dates[1]);
+      }
+
+      priceEl.setAttribute('value', data.price);
       priceEl.textContent = `\$${data.price.toLocaleString('en-US')} per Day`;
-      totalEl.textContent = `Total: \$${data.price.toLocaleString('en-US')} for 1 Day(s)`;
+      const totalPrice = data.price * rentalPeriod;
+      totalEl.setAttribute('value', totalPrice);
+      totalEl.textContent = `Total: \$${totalPrice.toLocaleString('en-US')} for ${rentalPeriod} Day(s)`;
 
       let availability = [];
       for (let i = 0; i < data.locations.length; i++) {
@@ -118,14 +146,17 @@ const bookNowFormHandler = async (event) => {
 
   const location_id = locationSelector.value;
   const car_id = carSelector.value;
-  const start_date = new Date();
-  const end_date = new Date(2021, 9, 6);
+  const dates = rangepicker.getDates();
+  const start_date = dates[0];
+  const end_date = dates[1];
+  const rental_period = getRentalPeriod(start_date, end_date);
+  const total_price = totalEl.getAttribute('value');
 
-  console.log(location_id, car_id, start_date, end_date);
-  if (location_id && car_id && start_date && end_date) {
+  console.log(location_id, car_id, start_date, end_date, rental_period, total_price);
+  if (location_id && car_id && start_date && end_date && rental_period && total_price) {
     const response = await fetch('/api/book-now', {
       method: 'POST',
-      body: JSON.stringify({ location_id, car_id, start_date, end_date }),
+      body: JSON.stringify({ location_id, car_id, start_date, end_date, rental_period, total_price }),
       headers: { 'Content-Type': 'application/json' },
     });
 
@@ -143,3 +174,5 @@ selectCarHandler();
 locationSelector.addEventListener('change', selectCityHandler);
 carSelector.addEventListener('change', selectCarHandler);
 confirmBtnEl.addEventListener('click', bookNowFormHandler);
+startDateEl.addEventListener('changeDate', dateChangeHandler);
+endDateEl.addEventListener('changeDate', dateChangeHandler);
