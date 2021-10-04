@@ -180,7 +180,6 @@ const bookNowFormHandler = async (event) => {
   const rental_period = getRentalPeriod(start_date, end_date);
   const total_price = totalEl.getAttribute('value');
 
-  console.log(location_id, car_id, start_date, end_date, rental_period, total_price);
   if (location_id && car_id && start_date && end_date && rental_period && total_price) {
     const response = await fetch('/api/book-now', {
       method: 'POST',
