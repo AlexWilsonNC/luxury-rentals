@@ -1,4 +1,4 @@
-const bookBtnEl = document.querySelectorAll('.book-btn');
+const bookBtnEl = document.querySelectorAll('.card');
 
 bookBtnEl.forEach(function (el) {
     el.addEventListener('click', function (event) {

@@ -1,17 +1,15 @@
 <li class="card">
-    {{!-- <a href="car-{{id}}" id="car-{{id}}"> --}}
+    <a href="" id="car-{{id}}">
         <div class="image">
-            <img src="{{image}}" alt="{{make}} {{model}}">
+            <img class="car-img" src="{{image}}" alt="{{make}} {{model}}">
             <div class="image-overlay">
-                <div class="overlay-text">{{make}}</div>
+                <img class="overlay-logo" src="{{overlay}}">
             </div>
         </div>
         <h1>{{make}} {{model}}</h1>
         <div class="name-year">
-            <p>{{year}}</p>
+            <p>Year: {{year}}</p>
             <p>${{format_price price}}/day</p>
-            <button id="car-{{id}}" class="book-btn">Rent</button>
         </div>
-        {{!--
-    </a> --}}
+    </a>
 </li>
