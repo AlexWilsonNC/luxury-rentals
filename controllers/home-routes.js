@@ -18,7 +18,6 @@ router.get('/rentals', async (req, res) => {
     const cars = carData.map((car) =>
       car.get({ plain: true })
     );
-
     res.render('rentals', { cars, logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
@@ -39,7 +38,8 @@ router.get('/rentals/:city', async (req, res) => {
             'model',
             'price',
             'color',
-            'image'
+            'image',
+            'overlay'
           ],
         },
       ],
