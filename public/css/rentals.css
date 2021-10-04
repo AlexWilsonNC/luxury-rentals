@@ -275,7 +275,7 @@ iframe {
 
 .image {
     position: relative;
-    width: 480px;
+    width: 100%;
 }
 
 .image-overlay {
@@ -373,12 +373,12 @@ iframe {
         width: 380px;
         height: 340px;
     }
-    .card img {
+    .card .car-img {
         width: 380px;
         height: 220px;
     }
     .image {
-        width: 380px;
+        width: 100%;
     }
     .overlay-logo {
         width: 200px;
@@ -411,7 +411,7 @@ iframe {
         width: 380px;
         height: 320px;
     }
-    .card img {
+    .card .car-img {
         width: 380px;
         height: 215px;
     }
@@ -505,7 +505,7 @@ iframe {
         width: 340px;
         height: 280px;
     }
-    .card img {
+    .card .car-img {
         width: 340px;
         height: 200px;
     }
