@@ -14,6 +14,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#up-arrow {
+    font-size: 50px;
+    color: #fff;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
+}
+
+#up-arrow:hover {
+    color: rgb(255, 66, 66);
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 0px 10px 1px #fff;
+}
+
 #main-nav {
     height: 115px;
     background-image: url(../assets/black-bg.jpg);
@@ -279,7 +297,6 @@ iframe {
     cursor: pointer;
 }
 
-
 .overlay-logo {
     width: 300px;
     height: 150px;
@@ -318,6 +335,8 @@ iframe {
     color: black;
 }
 
+/**********************************/
+
 #bottom-footer {
     height: 75px;
     background-color: black;
@@ -341,10 +360,6 @@ iframe {
 }
 
 @media screen and (max-width: 1400px) {
-    #container {
-        height: 85vh;
-        min-height: 325vh;
-    }
     .nav-right {
         margin-right: 20px;
     }
@@ -362,12 +377,17 @@ iframe {
         width: 380px;
         height: 220px;
     }
+    .image {
+        width: 380px;
+    }
+    .overlay-logo {
+        width: 200px;
+        height: 100px;
+        opacity: 0.86;
+    }
 }
 
 @media screen and (max-width: 1278px) {
-    #container {
-        min-height: 305vh;
-    }
     #main-nav {
         height: 125px;
     }
@@ -376,9 +396,6 @@ iframe {
     }
     .nav-right a {
         margin-right: 20px;
-    }
-    #container {
-        height: 75vh;
     }
     .location-box {
         width: 250px;
@@ -401,9 +418,6 @@ iframe {
 }
 
 @media screen and (max-width: 1191px) {
-    #container {
-        min-height: 465vh;
-    }
     #main-nav {
         height: 125px;
         display: flex;
@@ -432,9 +446,6 @@ iframe {
     }
 }
 @media screen and (max-width: 1125px) {
-    #container {
-        min-height: 805vh;
-    }
     #header {
         height: 30vh;
     }
@@ -473,9 +484,6 @@ iframe {
     .nav-right a {
         margin-right: 20px;
     }
-    #container {
-        min-height: 205vh;
-    }
     #locations {
         width: 70%;
         margin: 0px auto;
@@ -490,9 +498,6 @@ iframe {
 }
 
 @media screen and (max-width: 885px) {
-    #container {
-        min-height: 415vh;
-    }
     #header {
         height: 30vh;
     }
@@ -523,26 +528,19 @@ iframe {
         padding: 6px 12px 6px 12px;
         font-size: 16px;
     }
-    #container {
-        margin-top: 50px;
-        height: 40vh;
+    #locations {
+        width: 100%;
     }
-   #locations {
-       width: 100%;
-   }
-   iframe {
-       width: 400px;
-       height: 400px;
-   }
-   #h6 {
-    left: 25px;
-   }
+    iframe {
+        width: 400px;
+        height: 400px;
+    }
+    #h6 {
+        left: 25px;
+    }
 }
 
 @media screen and (max-width: 560px) {
-    #container {
-        margin-top: 50px;
-    }
     iframe {
         width: 400px;
         height: 200px;
