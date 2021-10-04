@@ -13,29 +13,28 @@
 </head>
 
 <body>
-    <div id="container">
-        <nav id="main-nav">
-            <div id="logo-center">
-                <a id="lux-txt" href="/">Luxury Rentals</a>
-            </div>
-            <div class="nav-right top-nav">
-                <a href="/">Home</a>
-                <a href="/rentals">Rentals</a>
-                <a href="/contact">Contact</a>
-                {{#if logged_in}}
-                <div class="account-dropdown">
-                    <a id="account" href="/account">Account <span class="down-icon3"><i
-                                class="fas fa-chevron-down"></i></span></a>
-                    <div class="dropdown-content">
-                        <a class="logout" href="">Logout</a>
-                    </div>
-                </div> {{else}}
-                <a href="/login">Login</a>
-                {{/if}}
-                <a href="/book-now/0/0"><button class="book-now-btn nav-btn">Book Now</button></a>
-            </div>
-        </nav>
-    </div>
+    <nav id="main-nav">
+        <div id="logo-center">
+            <a id="lux-txt" href="/">Luxury Rentals</a>
+        </div>
+        <div class="nav-right top-nav">
+            <a href="/">Home</a>
+            <a href="/rentals">Rentals</a>
+            <a href="/contact">Contact</a>
+            {{#if logged_in}}
+            <div class="account-dropdown">
+                <a id="account" href="/account">Account <span class="down-icon3"><i
+                            class="fas fa-chevron-down"></i></span></a>
+                <div class="dropdown-content">
+                    <a class="logout" href="">Logout</a>
+                </div>
+            </div> {{else}}
+            <a href="/login">Login</a>
+            {{/if}}
+            <a href="/book-now/0/0"><button class="book-now-btn nav-btn">Book Now</button></a>
+        </div>
+    </nav>
+
 
     <article>
         <div id="main-box">
