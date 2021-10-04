@@ -22,7 +22,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
 }
 
 #account {
@@ -185,7 +184,7 @@ body {
 }
 
 #main-box2 {
-    width: 60%;
+    width: 70%;
     background-color: rgba(131, 131, 131, 0.75);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
     border-radius: 15px;
@@ -233,7 +232,7 @@ body {
 }
 
 .left * {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 0px;
 }
 
 .left h2 {
@@ -254,8 +253,8 @@ body {
 
 .img-right {
     height: 175px;
+    width: 320px;
     border: 3px solid black;
-    width: 100%;
     border-radius: 2px;
 }
 
@@ -291,6 +290,9 @@ body {
     .nav-right a {
         margin-right: 20px;
     }
+    #rental-history {
+        margin: 0px 0px 50px 0px;
+    }
 }
 
 @media screen and (max-width: 1278px) {
@@ -314,6 +316,10 @@ body {
     #locations footer {
         top: 235px;
         font-size: 28px;
+    }
+    .img-right {
+        height: 150px;
+        width: 300px;
     }
 }
 
@@ -359,11 +365,20 @@ body {
     #container {
         height: 30vh;
     }
+    #rental-history {
+        margin: 25px 0px 50px 0px;
+    }
+    #main-box2 {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 885px) {
     #main-box {
         width: 80%;
+    }
+    #main-box2 {
+        width: 85%;
     }
 }
 
@@ -391,6 +406,19 @@ body {
     #h6 {
         left: 25px;
     }
+    .prev-rental {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+    }
+    .left {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .right {
+        margin: 0 auto;
+        margin-top: -35px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -417,5 +445,15 @@ body {
     }
     .down-icon3 {
         font-size: 9px;
+    }
+    #rental-history {
+        margin: -5px 0px 50px 0px;
+    }
+    .prev-rental {
+        height: 400px;
+    }
+    .right {
+        margin: 0 auto;
+        margin-top: 0px;
     }
 }

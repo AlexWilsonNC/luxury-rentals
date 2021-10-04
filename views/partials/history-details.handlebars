@@ -4,12 +4,12 @@
         <div class="info">
             <div class="info-left">
                 <p class="rantal-date">{{format_date start_date}} - {{format_date end_date}}</p>
-                <p class="daily-price">${{format_price car.price}} per Day</p>
-                <p class="total-price">Total: ${{format_price total_price}} for {{rental_period}} Day(s)</p>
+                <p class="car-name">{{car.year}} {{car.make}} {{car.model}}</p>
             </div>
             <div class="info-right">
-                <p class="car-name">{{car.year}} {{car.make}} {{car.model}}</p>
                 <p class="location">{{location.city}}, {{location.airport}}</p>
+                <p class="daily-price">${{format_price car.price}} per Day</p>
+                <p class="total-price">Total: ${{format_price total_price}} for {{rental_period}} Day(s)</p>
             </div>
         </div>
     </div>

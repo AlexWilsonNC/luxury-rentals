@@ -187,9 +187,6 @@ article {
 
 
 @media screen and (max-width: 1400px) {
-    #container {
-        height: 50vh;
-    }
     article {
         min-height: 50vh;
     }
@@ -215,46 +212,52 @@ article {
 
 @media screen and (max-width: 1025px) {
     #main-nav {
-        height: 175px;
-        top: 0;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+    }
+    #logo-center {
+        margin-top: 5px;
     }
     #lux-txt {
         font-size: 38px;
         line-height: 65px;
         margin: 0px 0px 0px 0px;
-        font-family: 'Italiana', serif;
         float: none;
-    }
-    #logo-center {
-        display: flex;
-        justify-content: center;
     }
     .nav-right {
         display: flex;
         justify-content: space-around;
         float: none;
-        margin-right: 0px;    
+        margin: 0px 0px 20px 0px;    
+    }
+    .nav-right a {
+        margin-right: 20px;
     }
     .book-now-btn {
         padding: 7px 15px 7px 15px;
     }
     #container {
-        display: none;
-    }
-    #main-box {
-        margin-top: 200px;
+        height: 40vh;
     }
     #bottom-footer {
         position: relative;
         bottom: 0;
     }
-    article {
-        min-height: 90vh;
+    #main-box {
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 885px) {
-   
+    .login-width,
+    .signup-width {
+        font-size: 18px;
+    }
+    #login-btn,
+    #signup-btn {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -265,10 +268,15 @@ article {
     #h6 {
         left: 25px;
     }
-}
-
-@media screen and (max-width: 650px) {
-    
+    #container {
+        background: none;
+        height: 20vh;
+    }
+    #bottom-footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -282,5 +290,13 @@ article {
     }
     .down-icon3 {
         font-size: 9px;
+    }
+    .login-width,
+    .signup-width {
+        font-size: 14px;
+    }
+    #login-btn,
+    #signup-btn {
+        font-size: 18px;
     }
 }

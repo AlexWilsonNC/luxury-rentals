@@ -18,7 +18,6 @@ body {
     height: 115px;
     background-image: url(../assets/black-bg.jpg);
     color: #fff;
-    position: fixed;
     width: 100%;
     z-index: 100;
     display: flex;
@@ -142,18 +141,18 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 92vh;
 }
 
 #main-box {
     width: 70%;
-    height: 450px;
     background-color: rgba(131, 131, 131, 0.75);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
-    margin: 35px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     display: flex;
     justify-content: center;
+    padding-bottom: 25px;
 }
 
 #left {
@@ -181,7 +180,7 @@ article {
 #right {
     width: 45%; 
     text-align: center;
-    background-color: blue;
+    margin-top: 40px;
 }
 
 #img-generator {
@@ -235,9 +234,7 @@ article {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 
 #h6 {
@@ -266,6 +263,13 @@ article {
     #price-generator {
         font-size: 34px;
     }
+    #total-purchase {
+        font-size: 18px;
+    }
+    .confirm-btn {
+        padding: 8px 22px 8px 22px;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 1278px) {
@@ -280,6 +284,10 @@ article {
     }
     .nav-right a {
         margin-right: 10px;
+    }
+    .confirm-btn {
+        padding: 7px 20px 7px 20px;
+        font-size: 16px;
     }
 }
 
@@ -314,12 +322,17 @@ article {
         padding: 6px 12px 6px 12px;
         font-size: 16px;
     }
-    #main-box {
-        height: 60vh;
-        margin-top: 100px;
-    }
     #price-generator {
         font-size: 28px;
+    }
+    #bottom-right {
+        flex-direction: column;
+    }
+    .confirm-btn {
+        margin-top: 10px;
+    }
+    #right {
+        margin-top: 25px;
     }
 }
 
@@ -327,18 +340,38 @@ article {
     #img-right {
         width: 200px;
     }
+    #right {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 720px) {
     #h6 {
         left: 25px;
     }
-    #img-right {
-        width: 175px;
+    #article {
+        height: 125vh;
+        margin-top: 500px;
     }
-    #price-generator {
-        font-size: 24px;
+    #main-box {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        margin: 25px 0px 25px 0px;
     }
+    #left {
+        align-items: center;
+        width: 100%;
+        padding-left: 0px;
+    }
+    #right {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .dropdown,
+    .number-days {
+    margin: 0px 0px 10px 0px;
+}
 }
 
 @media screen and (max-width: 560px) {
