@@ -18,7 +18,7 @@ const defaultSelector = () => {
     };
   };
   for (let i, j = 0; i = carSelector.options[j]; j++) {
-    if (i.value == car) {
+    if (i.value == car && car !== '0') {
       carSelector.selectedIndex = j;
       break;
     };
