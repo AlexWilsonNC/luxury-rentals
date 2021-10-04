@@ -40,4 +40,4 @@ The user is able to choose from a variety of high-end vehicles across four locat
 
 ![screenshot](/public/assets/luxury-rentals1.png)
 
-![screenshot](/public/assets/luxury-rentals2.png)
+![screenshot](/public/assets/rental-ss.png)
