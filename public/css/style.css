@@ -507,7 +507,8 @@ body {
         display: none;
     }
     #container {
-        height: 40vh;
+        height: 20vh;
+        background: none;
     }
     #about {
         margin: 25px auto;
