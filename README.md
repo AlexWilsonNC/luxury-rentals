@@ -20,7 +20,7 @@ The user is able to choose from a variety of high-end vehicles across four locat
 
 * Database: MySQL and Sequelize ORM
 
-* [Vanilla JS Datapicker](https://github.com/mymth/vanillajs-datepicker)
+* [Vanilla JS Datepicker](https://github.com/mymth/vanillajs-datepicker)
 
 * [Google Maps JavaScript API](https://developers.google.com/maps)
 
