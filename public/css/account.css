@@ -175,6 +175,11 @@ body {
     background: rgba(0, 0, 0, 0.8);
 }
 
+h2 {
+    font-size: 36px;
+    margin-top: 5px;
+}
+
 #rental-history {
     display: flex;
     flex-direction: column;
@@ -233,10 +238,6 @@ body {
 
 .left * {
     margin: 0px 10px 0px 0px;
-}
-
-.left h2 {
-    font-size: 28px;
 }
 
 .left p {
