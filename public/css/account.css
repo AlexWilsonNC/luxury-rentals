@@ -186,7 +186,6 @@ body {
 
 #main-box2 {
     width: 60%;
-    height: 450px;
     background-color: rgba(131, 131, 131, 0.75);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.75);
     border-radius: 15px;
@@ -198,9 +197,9 @@ body {
 
 .prev-rental {
     width: 90%;
-    height: 200px;
+    height: 250px;
     border: 0.5px solid black;
-    margin-top: 15px;
+    margin: 15px 0px 15px 0px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.644);
     display: flex;
@@ -243,7 +242,7 @@ body {
 
 .left p {
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .right {

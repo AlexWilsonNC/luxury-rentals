@@ -529,6 +529,7 @@ iframe {
         font-size: 16px;
     }
     #locations {
+        margin-top: -50px;
         width: 100%;
     }
     iframe {
@@ -562,5 +563,11 @@ iframe {
     }
     .down-icon3 {
         font-size: 9px;
+    }
+    #locations {
+        margin-top: -75px;
+    }
+    #all-cars {
+        margin-top: 150px;
     }
 }
