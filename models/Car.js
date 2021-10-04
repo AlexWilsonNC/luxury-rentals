@@ -43,7 +43,7 @@ Car.init(
         },
         overlay: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: false
         },
         location_id: {
             type: DataTypes.INTEGER,
