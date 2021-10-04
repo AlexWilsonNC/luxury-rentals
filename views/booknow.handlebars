@@ -49,7 +49,6 @@
                 </select>
                 <p>Vehicle Selection:</p>
                 <select id="vehicle-selector" class="dropdown" name="dropdown">
-                    <option value="0"> -- Select a Car -- </option>
                     {{#each cars as |car|}}
                     <option id="car-{{car.id}}" value="{{car.id}}">{{car.make}} {{car.model}}</option>
                     {{/each}}

@@ -9,7 +9,7 @@ const endDateEl = document.querySelector('#end-date');
 
 const defaultSelector = () => {
   const city = window.location.pathname.split('/')[2];
-  const car = window.location.pathname.split('/')[3];
+  let car = window.location.pathname.split('/')[3];
 
   for (let i, j = 0; i = locationSelector.options[j]; j++) {
     if (i.value == city) {
@@ -17,12 +17,40 @@ const defaultSelector = () => {
       break;
     };
   };
-  for (let i, j = 0; i = carSelector.options[j]; j++) {
-    if (i.value == car) {
-      carSelector.selectedIndex = j;
-      break;
+
+  if (car === '0') {
+    fetch('/api/car')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        let available = [];
+        for (let i = 0; i < data.length; i++) {
+          if (data[i].locations.length === 4) {
+            available.push(data[i].id);
+          }
+        };
+        car = available[Math.floor(Math.random() * available.length)];
+        for (let i, j = 0; i = carSelector.options[j]; j++) {
+          if (i.value == car) {
+            carSelector.selectedIndex = j;
+            break;
+          };
+        };
+
+        selectCarHandler();
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  } else {
+    for (let i, j = 0; i = carSelector.options[j]; j++) {
+      if (i.value == car) {
+        carSelector.selectedIndex = j;
+        break;
+      };
     };
-  };
+  }
 };
 
 const dateChangeHandler = () => {
