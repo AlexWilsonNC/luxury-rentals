@@ -54,14 +54,11 @@
                     <option id="car-{{car.id}}" value="{{car.id}}">{{car.make}} {{car.model}}</option>
                     {{/each}}
                 </select>
-                <p>Choose Pickup Date:</p>
-                <input type="text" id="numder-days" placeholder="How many days?">
-                <p>Choose Dropoff Date:</p>
-                <input type="text" id="number-days" placeholder="How many days?">
-                <div id="foo">
-                    <input id="start-date" type="text" name="start">
-                    <span>to</span>
-                    <input id="end-date" type="text" name="end">
+                <div id="date-picker">
+                    <p>Choose Pickup Date:</p>
+                    <input id="start-date" type="text" class="number-days" name="start">
+                    <p>Choose Dropoff Date:</p>
+                    <input id="end-date" type="text" class="number-days" name="end">
                 </div>
             </div>
 
