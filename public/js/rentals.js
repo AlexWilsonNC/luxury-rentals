@@ -4,7 +4,7 @@ bookBtnEl.forEach(function (el) {
     el.addEventListener('click', function (event) {
         event.preventDefault();
 
-        if(window.location.pathname.split('/')[2]) {
+        if (window.location.pathname.split('/')[2]) {
             var cityId = window.location.pathname.split('/')[2];
         } else {
             var cityId = 0;
