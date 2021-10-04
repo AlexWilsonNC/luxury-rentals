@@ -9,7 +9,8 @@ bookBtnEl.forEach(function (el) {
         } else {
             var cityId = 0;
         }
-        var carId = event.target.id.split('-')[1];
+
+        var carId = event.target.closest('a').id.split('-')[1];
         console.log(carId);
 
         document.location.replace('/book-now/' + cityId + '/' + carId);
