@@ -268,7 +268,7 @@ const carData = [
     {
         "year": "2020",
         "make": "Aston Martin",
-        "model": "Superleggera",
+        "model": "SL",
         "price": "2000",
         "color": "Green",
         "image": "/assets/extra-inventory/aston-superleggera-2020.jpg",
