@@ -7,18 +7,23 @@
 const elem = document.getElementById('foo');
 const rangepicker = new DateRangePicker(elem, {
   // ...options
-}); 
+});
 
 
 //const elem = document.querySelector('input[name="calendar"]');
 //const datepicker = new Datepicker(elem, {
-  //Date: "mm/dd/yyy"
+//Date: "mm/dd/yyy"
 //}); 
 
-console.log(elem);
+function getRentalPeriod(a, b) {
+  const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+  const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
 
+  const diff = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
+  return diff + 1;
+}
 //function getDaysInMonth(month, year) {
- 
+
 //}
 
 // does something when a date is clicked
