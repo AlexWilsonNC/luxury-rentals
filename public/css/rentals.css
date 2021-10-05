@@ -328,11 +328,15 @@ iframe {
 }
 
 .name-year {
-    font-size: 34px;
-    padding: 15px 0px 0px 0px;
+    font-size: 28px;
+    padding: 20px 0px 0px 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     color: black;
+}
+
+.name-year p {
+    margin-right: 25px;
 }
 
 /**********************************/
